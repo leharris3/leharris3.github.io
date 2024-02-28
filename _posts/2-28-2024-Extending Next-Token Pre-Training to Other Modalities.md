@@ -21,3 +21,9 @@ The gazillion-dollar question then becomes do we have enough data lying around t
 1. The future of AI assistants is expanding to new modalities
 2. Features needed to build a complete world model are latent in video and audio
 3. Expanding the next-token prediction + instruction tuning training scheme to other modalities may be an effective way of learning these features
+
+ ```tsql
+ SELECT *
+ FROM sys.tables
+ WHERE [name] = 'SomeTable'
+ ```
