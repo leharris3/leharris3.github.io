@@ -1,5 +1,3 @@
-**Extending Next-Token Pre-Training to Other Modalities**
-
 Inspired By: [This Paper](https://huggingface.co/papers/2402.17139)
 
 I've been thinking this morning about how to generalize the pre-training, fine-tuning scheme that is a winning formula for LLMs to other modalities. Currently, to make helpful assistants that use natural language, we adopt a two-stage approach:
