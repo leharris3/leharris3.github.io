@@ -1,4 +1,4 @@
-# **Sex & Cells** :seedling:
+# **Sex and Cells**
 ### *An Informal Introduction to Biology*
 
 ---
@@ -21,7 +21,7 @@ So we can say that life follows a kind of hierarchy. Living things and their com
 
 We'll organize this document into four primary sections.
 
-##### Course Structure
+## Course Structure
 
 1. Cells
 2. Sex
