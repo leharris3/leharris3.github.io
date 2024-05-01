@@ -11,11 +11,11 @@ Biology is the **study of life**. It is an exploration of the structure and func
 
 We divide Biology into **five major themes** to make it a little more palatable.
 
-    1. Evolution
-    2. Flow of Information: This includes the exchange of genetic material between organisms.
-    3. Structure and Function: Plainly, what do components of life look like and what do they do?
-    4. Transformation of Matter and Energy: Life is matter fueled by energy, as a result, the interactions between these two concepts become important.
-    5. Interactions Between Systems: Here we refer to biological systems big and small. These can be ecosystems or hormonal systems.
+1. Evolution
+2. Flow of Information: This includes the exchange of genetic material between organisms.
+3. Structure and Function: Plainly, what do components of life look like and what do they do?
+4. Transformation of Matter and Energy: Life is matter fueled by energy, as a result, the interactions between these two concepts become important.
+5. Interactions Between Systems: Here we refer to biological systems big and small. These can be ecosystems or hormonal systems.
 
 So we can say that life follows a kind of hierarchy. Living things and their components can be organized from small to big to stuff in a meaningful way. It is our goal in this exploration to develop a top-to-bottom understanding of the basics of biology. This isn't easy. Biology is a big field and spans a nearly endless number of topics. Therefore, as we work our way up the scales of life, we may be forced to take the occasional detour. This is necessary so that we don't leave out vital Biological processes that may be needed later.
 
