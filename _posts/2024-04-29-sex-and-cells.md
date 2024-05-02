@@ -180,17 +180,17 @@ Human cells embryonic cells are *eukaryotic* cells and pass through three phases
 Mitosis contains many steps and sub-steps. For the sake of simplicity, we will overview only the most important stages of this process.
 
 1. **Prophase**
-    - Copies of chromosomes from interphase begin to condense and become visible. Our chromosomes now contain a pair of **sister chromatids**, which are joined together at a point called a **centromere**. Outside the nucleus, a structure called a **spindle** begins to form which is responsible for pulling chromosomes apart. 
+    - Copies of chromosomes from interphase begin to condense and become visible. Our chromosomes now contain a pair of **sister chromatids**, which are joined together at a point called a **centromere**. Outside the nucleus, a structure called a **spindle** begins to form which is responsible for pulling chromosomes apart. 
 2. **Prometaphase**
-    - The **nuclear envelope** breaks down and the spindle fibers latch onto chromosomes. All the machinery is now in place to rip apart chromosomes.
+    - The **nuclear envelope** breaks down and the spindle fibers latch onto chromosomes. All the machinery is now in place to rip apart chromosomes.
 3. **Metaphase**
-    - Chromosomes line up down the middle of the cell. This step is very important. Our cell is going to divide along the equator in a little bit. Therefore, this "matching" procedure ensures that each new cell is getting an *exact* copy of each chromosome.
+    - Chromosomes line up down the middle of the cell. This step is very important. Our cell is going to divide along the equator in a little bit. Therefore, this "matching" procedure ensures that each new cell is getting an *exact* copy of each chromosome.
 4. **Anaphase**
-    - Finally, chromosomes are ripped apart and pulled towards opposite poles of the cell. We now have two copies of all the chromosomes aligned at the top and bottom cytoplasm.
+    - Finally, chromosomes are ripped apart and pulled towards opposite poles of the cell. We now have two copies of all the chromosomes aligned at the top and bottom cytoplasm.
 5. **Telophase**
-    - Two new nuclear envelopes begin to form around each respective pole of the cell.
+    - Two new nuclear envelopes begin to form around each respective pole of the cell.
 6. **Cytokinesis**
-    - Finally, the cell's cytoplasm splits into two complete daughter cells.
+    - Finally, the cell's cytoplasm splits into two complete daughter cells.
 
 ![Mitosis](/pictures/mitosis.png)
 
@@ -207,13 +207,13 @@ Human sex cells (i.e., sperm and eggs) are considered **haploid** cells. The 'ha
 Meiosis consists of two divisions, and unlike mitosis, *does* lead to an increase in genetic diversity. Meiosis consists of two identical rounds of cell division leading to the formation of 4 new sex cells. Once again, let's walk through the most important stages of meiosis.
 
 1. **Prophase I**
-    - Chromosomes line up within the cell to form pairs of **homologous chromosomes**. During this stage, chromosomes can swap genetic material in a process called **crossing over**.
+    - Chromosomes line up within the cell to form pairs of **homologous chromosomes**. During this stage, chromosomes can swap genetic material in a process called **crossing over**.
 2. **Metaphase I**
-    - Similarly to mitosis, chromosomes line up in pairs at the equator of the cell. However, chromosomes now line up **randomly** via **independent assortment**. These independent arrangements of chromosomes promote an increase in genetic diversity.
+    - Similarly to mitosis, chromosomes line up in pairs at the equator of the cell. However, chromosomes now line up **randomly** via **independent assortment**. These independent arrangements of chromosomes promote an increase in genetic diversity.
 3. **Anaphase I**
-    - Pairs of chromosomes are pulled apart by the spindle fibers of the cell, while sister chromatids raim together.
+    - Pairs of chromosomes are pulled apart by the spindle fibers of the cell, while sister chromatids raim together.
 4. **Telophase I and Cytokinesis**
-    - The cell finally divides into two, with each new cell containing *half* the number of chromosomes as the original cell.
+    - The cell finally divides into two, with each new cell containing *half* the number of chromosomes as the original cell.
 
 This process represents one more time during prophase II, metaphase II, anaphase II, and telophase II to create a total of 4 **haploid** cells.
 
@@ -305,13 +305,13 @@ Production of semen is precipitated by the release of **LH** and **FSH** hormone
 Approximately once a month, an egg is prepared for fertilization during **ovulation**, a stage in the **mental cycle** in females. Menstrual cycles are controlled by hormones, including regular dips and spikes of specific hormonal signals during different times of the month. The menstrual cycle is divided into four primary stages.
 
 1. Menstrual Phase
-    - The horomones **estrogen** and **progesterone** fall. Menstrual bleeding occurs as the old uterine lining (**endometrium**) is discarded.
+    - The horomones **estrogen** and **progesterone** fall. Menstrual bleeding occurs as the old uterine lining (**endometrium**) is discarded.
 2. Follicular Phase
-    - An increase in FSH released by the pituitary gland leads to the production of new follicles, each containing an immature egg. 
+    - An increase in FSH released by the pituitary gland leads to the production of new follicles, each containing an immature egg. 
 3. Ovulation Phase
-    - Rising estrogen levels correlate with a drop in LH. Next, ovulation occurs as the dominant follicle releases an egg from the ovary via ovulation.
+    - Rising estrogen levels correlate with a drop in LH. Next, ovulation occurs as the dominant follicle releases an egg from the ovary via ovulation.
 4. Luteal Phase
-    - The emptied follicle turns into a new structure called the **corpus luteum** responsible for producing progesterone and estrogen. The uterine lining is now at maximum thickness and is prepared for implantation. If the egg is not fertilized, the corpus luteum will degrade and disappear.
+    - The emptied follicle turns into a new structure called the **corpus luteum** responsible for producing progesterone and estrogen. The uterine lining is now at maximum thickness and is prepared for implantation. If the egg is not fertilized, the corpus luteum will degrade and disappear.
 
 ![Mentstral Cycle Hormone Chart](/pictures/menstral-horomone-chart.png)
  
