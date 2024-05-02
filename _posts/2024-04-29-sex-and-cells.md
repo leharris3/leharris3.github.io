@@ -117,19 +117,19 @@ Energy moves through the cell during respiration on "shuttles" called **cofactor
 Let's walk through the three stages of cellular respiration in **eukaryotic** cells. Please note that the figures for ATP production are approximations. In a real-world scenario, the number of ATP molecules produced during a round of cellular respiration will vary. 
 
 1. Stage One: **Glycloysis**
-    - A glucose molecule is split into molecules of **pyruvic acid**.
-    - Location: Cytoplasm
-    - Inputs: `[NAD+, Glucose]`
-    - Outputs: `[Pyruvate, 2-NADH, 2-ATP]`
+    - A glucose molecule is split into molecules of **pyruvic acid**.
+    - Location: Cytoplasm
+    - Inputs: `[NAD+, Glucose]`
+    - Outputs: `[Pyruvate, 2-NADH, 2-ATP]`
 2. Stage Two: The **Krebs Cycle** (A.K.A. The Citric Acid Cycle)
-    - Pyruvate from the stage is broken down into carbon dioxide.
-    - Location: **Mitochondrial Matrix**
-    - Inputs: `[Acetyl-CoA (Converted from Pyruvate)*, NAD+, FAD]`
-    - Outputs: `[NADH, FADH2, 2-ATP]`
+    - Pyruvate from the stage is broken down into carbon dioxide.
+    - Location: **Mitochondrial Matrix**
+    - Inputs: `[Acetyl-CoA (Converted from Pyruvate)*, NAD+, FAD]`
+    - Outputs: `[NADH, FADH2, 2-ATP]`
 3. Stage Three: **Oxidative Phosphorylation**
-    - Location: **Inner Mitochondrial Membrane**
-    - Inputs: `[NADH, FADH2, Oxygen]`
-    - Outputs: `[Water, 28-ATP]`
+    - Location: **Inner Mitochondrial Membrane**
+    - Inputs: `[NADH, FADH2, Oxygen]`
+    - Outputs: `[Water, 28-ATP]`
 
 `*` *Coenzyme A converts pyruvate into acetyl-CoA between stages one and two.*
 
