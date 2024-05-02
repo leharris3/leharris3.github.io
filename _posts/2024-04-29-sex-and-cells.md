@@ -337,7 +337,7 @@ We now arrive at our last stop on this introductory tour of biology. This sectio
 
 ### A. Evolution of Populations
 
-The *Darwinian** theory of evolution states that species evolve by the selection of desirable traits within a population over time. This concept is also referred to as the **survival of the fittest**. Individuals the greater *fitness* reproduce a pass of their genes to future generations. Variations within a population are the result of sexual reproduction and random genetic mutations. This phenomenon calls back to our discussions of DNA. Darwin noted differences between the beaks of fiches. These slight variations of common features are called **homologies**.
+The **Darwinian** theory of evolution states that species evolve by the selection of desirable traits within a population over time. This concept is also referred to as the **survival of the fittest**. Individuals the greater *fitness* reproduce a pass of their genes to future generations. Variations within a population are the result of sexual reproduction and random genetic mutations. This phenomenon calls back to our discussions of DNA. Darwin noted differences between the beaks of fiches. These slight variations of common features are called **homologies**.
 
 Evolution can only occur at the population level. Individuals can *not* evolve throughout a lifetime. We can tell if a species is evolving using criteria developed by the scientists Hardy and Weinberg. These requirements are as follows.
 
