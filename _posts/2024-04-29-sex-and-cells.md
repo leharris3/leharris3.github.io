@@ -77,7 +77,7 @@ We stated earlier that diffusion can occur without *energy* because substances l
 
 Cells can also inject or remove large particles by **endocytosis** and **exocytosis** respectively. 
 
-![Active vs. Passive Transport](pictures/active-passive-transport.png)
+![Active vs. Passive Transport](/pictures/active-passive-transport.png)
 
 ### D. Cell Signaling
 Cells are rarely acting alone. Most cells are part of larger, complex structures with functions that far exceed the capabilities of a single living thing. So, to achieve this superior functionality, cells must work together. Teamwork requires communication. 
