@@ -61,7 +61,7 @@ One other special kind of lipid is the **phospholipids**. These molecules are hy
 
 Briefly, we'll mention one more very special macromolecule: **DNA**. DNA is composed of **nucleotide** monomers and uses **hydrogen bonds** to hold together their double helix shape. We'll have plenty more to say about DNA a little later.
 
-![Phospholipid Bi-Layer](pictures/phospholipid.jpg)
+![Phospholipid Bi-Layer](../pictures/phospholipid.jpg)
 
 ### C. The Cell Membrane
 
