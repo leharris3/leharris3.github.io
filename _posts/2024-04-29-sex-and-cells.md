@@ -113,19 +113,19 @@ Energy moves through the cell during respiration on "shuttles" called **cofactor
 Let's walk through the three stages of cellular respiration in **eukaryotic** cells. Please note that the figures for ATP production are approximations. In a real-world scenario, the number of ATP molecules produced during a round of cellular respiration will vary. 
 
 1. Stage One: **Glycloysis**
-    - A glucose molecule is split into molecules of **pyruvic acid**.
-    - Location: Cytoplasm
-    - Inputs: `[NAD+, Glucose]`
-    - Outputs: `[Pyruvate, 2-NADH, 2-ATP]`
+    - A glucose molecule is split into molecules of **pyruvic acid**.
+    - Location: Cytoplasm
+    - Inputs: `[NAD+, Glucose]`
+    - Outputs: `[Pyruvate, 2-NADH, 2-ATP]`
 2. Stage Two: The **Krebs Cycle** (A.K.A. The Citric Acid Cycle)
-    - Pyruvate from the stage is broken down into carbon dioxide.
-    - Location: **Mitochondrial Matrix**
-    - Inputs: `[Acetyl-CoA (Converted from Pyruvate)*, NAD+, FAD]`
-    - Outputs: `[NADH, FADH2, 2-ATP]`
+    - Pyruvate from the stage is broken down into carbon dioxide.
+    - Location: **Mitochondrial Matrix**
+    - Inputs: `[Acetyl-CoA (Converted from Pyruvate)*, NAD+, FAD]`
+    - Outputs: `[NADH, FADH2, 2-ATP]`
 3. Stage Three: **Oxidative Phosphorylation**
-    - Location: **Inner Mitochondrial Membrane**
-    - Inputs: `[NADH, FADH2, Oxygen]`
-    - Outputs: `[Water, 28-ATP]`
+    - Location: **Inner Mitochondrial Membrane**
+    - Inputs: `[NADH, FADH2, Oxygen]`
+    - Outputs: `[Water, 28-ATP]`
 
 `*` *Coenzyme A converts pyruvate into acetyl-CoA in between stages one and two.*
 
@@ -176,17 +176,17 @@ Human cells embryonic cells are *eukaryotic* cells and pass through three phases
 Mitosis contains many steps and sub-steps. For the sake of simplicity, we will overview only the most important stages of this process.
 
 1. **Prophase**
-    - Copies of chromosomes from interphase begin to condense and become visible. Our chromosomes now contain a pair of **sister chromatids**, which are joined together at a point called a **centromere**. Outside the nucleus, a structure called a **spindle** begins to form which is responsible for pulling chromosomes apart. 
+    - Copies of chromosomes from interphase begin to condense and become visible. Our chromosomes now contain a pair of **sister chromatids**, which are joined together at a point called a **centromere**. Outside the nucleus, a structure called a **spindle** begins to form which is responsible for pulling chromosomes apart. 
 2. **Prometaphase**
-    - The **nuclear envelope** breaks down and the spindle fibers latch onto chromosomes. All the machinery is now in place to rip apart chromosomes.
+    - The **nuclear envelope** breaks down and the spindle fibers latch onto chromosomes. All the machinery is now in place to rip apart chromosomes.
 3. **Metaphase**
-    - Chromosomes line up down the middle of the cell. This step is very important. Our cell is going to divide along the equator in a little bit. Therefore, this "matching" procedure ensures that each new cell is getting an *exact* copy of each chromosome.
+    - Chromosomes line up down the middle of the cell. This step is very important. Our cell is going to divide along the equator in a little bit. Therefore, this "matching" procedure ensures that each new cell is getting an *exact* copy of each chromosome.
 4. **Anaphase**
-    - Finally, chromosomes are ripped apart and pulled towards opposite poles of the cell. We now have two copies of all the chromosomes aligned at the top and bottom cytoplasm.
+    - Finally, chromosomes are ripped apart and pulled towards opposite poles of the cell. We now have two copies of all the chromosomes aligned at the top and bottom cytoplasm.
 5. **Telophase**
-    - Two new nuclear envelopes begin to form around each respective pole of the cell.
+    - Two new nuclear envelopes begin to form around each respective pole of the cell.
 6. **Cytokinesis**
-    - Finally, the cell's cytoplasm splits into two complete daughter cells.
+    - Finally, the cell's cytoplasm splits into two complete daughter cells.
 
 ![Mitosis](/pictures/mitosis.png)
 
@@ -203,13 +203,13 @@ Human sex cells (i.e., sperm and eggs) are considered **haploid** cells. The 'ha
 Meiosis consists of two divisions, and unlike mitosis, *does* lead to an increase in genetic diversity. Meiosis consists of two identical rounds of cell division leading to the formation of 4 new sex cells. Once again, let's walk through the most important stages of meiosis.
 
 1. **Prophase I**
-    - Chromosomes line up within the cell to form pairs of **homologous chromosomes**. During this stage, chromosomes can swap genetic material in a process called **crossing over**.
+    - Chromosomes line up within the cell to form pairs of **homologous chromosomes**. During this stage, chromosomes can swap genetic material in a process called **crossing over**.
 2. **Metaphase I**
-    - Similarly to mitosis, chromosomes line up in pairs at the equator of the cell. However, chromosomes now line up **randomly** via **independent assortment**. These independent arrangements of chromosomes promote an increase in genetic diversity.
+    - Similarly to mitosis, chromosomes line up in pairs at the equator of the cell. However, chromosomes now line up **randomly** via **independent assortment**. These independent arrangements of chromosomes promote an increase in genetic diversity.
 3. **Anaphase I**
-    - Pairs of chromosomes are pulled apart by the spindle fibers of the cell, while sister chromatids raim together.
+    - Pairs of chromosomes are pulled apart by the spindle fibers of the cell, while sister chromatids raim together.
 4. **Telophase I and Cytokinesis**
-    - The cell finally divides into two, with each new cell containing *half* the number of chromosomes as the original cell.
+    - The cell finally divides into two, with each new cell containing *half* the number of chromosomes as the original cell.
 
 This process represents one more time during prophase II, metaphase II, anaphase II, and telophase II to create a total of 4 **haploid** cells.
 
@@ -226,7 +226,7 @@ Through careful observation, scientists have discovered that A nucleotides alway
 
 
 **RNA** is a complementary molecule to DNA involved in the translation and reproduction of DNA. RNA contains the A, C, and G, bases but swaps out thymine (T) for **uracil** (U). Whereas DNA acts as a genetic blueprint, RNA is responsible for carrying out the genetic instructions it encodes. We'll talk about two types of RNA, **mRNA** and **tRNA**. tRNA has two special sites. An anticodon site, where juxtaposing nucleotides are assembled from mRNA and an amino acid site.
- 
+ 
 Ultimately, DNA and RNA work together to create proteins throughout a multi-staged process. DNA is transcribed into RNA during a **transcription** phase. Transcription takes place in the nucleus of eukaryotic cells. An enzyme called **RNA polymerase** attaches to the **promoter** region of DNA. This marks the "head" of the sequence. Think of RNA polymerase like a translation device, mapping each nucleotide in a **template strand** to a corresponding RNA nucleotide. The enzyme works its way down the DNA until it comes to a terminator, a codon that marks the end of the strand The final output strand is called **RNA transcript**.
 
 Next, messages carried by RNA are decoded in the **ribosomes** during the process of **translation** to make proteins. Let's take a look at this process in action.
@@ -274,7 +274,7 @@ When working with punnet squares make a few assumptions. For now, each parent ca
 | Bb | Blue |
 | bb | Brown |
 
-Notice how even one large "B" is enough to dominate over the recessive "b". We'll say that individuals who carry two of the same "cased" alleles are **homozygous**, and those who carry dominant and recessive alleles for a trait are  **heterozygous**. Let's look at a complete punnett square representing a cross between two pea plants. Pea plants were the first organisms to be studied in such a way. Again, note how plants with just one large "G" are green in color.
+Notice how even one large "B" is enough to dominate over the recessive "b". We'll say that individuals who carry two of the same "cased" alleles are **homozygous**, and those who carry dominant and recessive alleles for a trait are  **heterozygous**. Let's look at a complete punnett square representing a cross between two pea plants. Pea plants were the first organisms to be studied in such a way. Again, note how plants with just one large "G" are green in color.
 
 ![Pea Plant Cross](/pictures/punnet-square.png)
 
@@ -285,7 +285,7 @@ This experiment isolates the inheritance of one trait, and is referred to as a *
 ### F. Human Reproduction
 
 Earlier we explored meiosis - the general method by which sex cells divide. Now we zoom back a bit to view the human reproductive process as a whole. Specifically, we are interested in how human reproductive organs facilitate sexual reproduction and genetic inheritance.
- 
+ 
 Human sex cells come in male (**sperm**) and female (**egg**) varieties. These cells each contain one-half the entire human genome in 23 chromosomes donated from each parent. For these cells to fuse into a zygote, fertilization must occur. Humans, unlike a few mammals, utilize **internal fertilization**, or fertilization within the body. But before fertilization can occur, sex cells must develop in the bodies of males and females. 
 
 We start from the female perspective. Egg cells release from a **follicle** in the **ovary**. This follicle then becomes a **corpus lute**, which secretes hormones that aid in pregnancy. The egg is transported from the ovary to the **uterus** via the **oviduct**, where **normal implantation** may occur. **Oogenesis**, or the creation of new egg cells, starts at birth and ends after puberty.
@@ -301,16 +301,16 @@ Production of semen is precipitated by the release of **LH** and **FSH** hormone
 Approximately once a month, an egg is prepared for fertilization during **ovulation**, a stage in the **mental cycle** in females. Menstrual cycles are controlled by hormones, including regular dips and spikes of specific hormonal signals during different times of the month. The menstrual cycle is divided into four primary stages.
 
 1. Menstrual Phase
-    - The horomones **estrogen** and **progesterone** fall. Menstrual bleeding occurs as the old uterine lining (**endometrium**) is discarded.
+    - The horomones **estrogen** and **progesterone** fall. Menstrual bleeding occurs as the old uterine lining (**endometrium**) is discarded.
 2. Follicular Phase
-    - An increase in FSH released by the pituitary gland leads to the production of new follicles, each containing an immature egg. 
+    - An increase in FSH released by the pituitary gland leads to the production of new follicles, each containing an immature egg. 
 3. Ovulation Phase
-    - Rising estrogen levels correlate with a drop in LH. Next, ovulation occurs as the dominant follicle releases an egg from the ovary via ovulation.
+    - Rising estrogen levels correlate with a drop in LH. Next, ovulation occurs as the dominant follicle releases an egg from the ovary via ovulation.
 4. Luteal Phase
-    - The emptied follicle turns into a new structure called the **corpus luteum** responsible for producing progesterone and estrogen. The uterine lining is now at maximum thickness and is prepared for implantation. If the egg is not fertilized, the corpus luteum will degrade and disappear.
+    - The emptied follicle turns into a new structure called the **corpus luteum** responsible for producing progesterone and estrogen. The uterine lining is now at maximum thickness and is prepared for implantation. If the egg is not fertilized, the corpus luteum will degrade and disappear.
 
 ![Mentstral Cycle Hormone Chart](/pictures/menstral-horomone-chart.png)
- 
+ 
 # IV. Systems
 
 We now begin the first of two brief sections. **Systems** are a universal concept in biology. Simply, a system is any collection of functional apparatuses interacting within a common space. Life at all scales relies on systems to perform a plethora of functions. We have already explored a few of these structures. Energy production systems generate ATP at the level of cellular and human reproductive systems prompting the continuity of human life. We will examine one more system that lacks a clean fit within our previous sections.
@@ -321,15 +321,39 @@ In living things, internal mechanisms work to maintain balance with an external 
 
 Innate immunity includes all the mechanisms humans acquire at birth. These defenses include skin, mucous membranes, stomach acid, **natural killer** cells, and more. Innate immunity is fast immunity and responds if not instantly, very quickly to foreign threats.
 
-Acquired immunity occurs as humans gain exposure to new diseases over time. This form of immunity is slow. White blood cells or **lymphocytes**, are responsible for identifying and destroying foreign pathogens. **T cells** and **B cells** target **antigens**, or any substance that causes a bodily response. B cells specifically produce **antibodies**,  proteins that latch on to **antigens**. Upon detecting a foreign invader, B, and T cells proliferate through the body via **clonal selection**. Initial responses to a novel disease are typically slow. However, cellular "memory" allows the body to fight the same disease in subsequent encounters quickly. We say that **adaptive immunity** is **specific** and has **memory**.
+Acquired immunity occurs as humans gain exposure to new diseases over time. This form of immunity is slow. White blood cells or **lymphocytes**, are responsible for identifying and destroying foreign pathogens. **T cells** and **B cells** target **antigens**, or any substance that causes a bodily response. B cells specifically produce **antibodies**,  proteins that latch on to **antigens**. Upon detecting a foreign invader, B, and T cells proliferate through the body via **clonal selection**. Initial responses to a novel disease are typically slow. However, cellular "memory" allows the body to fight the same disease in subsequent encounters quickly. We say that **adaptive immunity** is **specific** and has **memory**.
 
-![The Primary and Secondary Immune Responses](/pictures/primary-secondary-immune-responses.jpeg)
+![The Primary and Secondary Immune Responses](/pictures/primary-secondary-immune-responses.png)
 
 Adaptive immunity fights disease using via dual defense mechanism. This system employs **humoral** and **cell-mediated** immune responses. The humoral immune response involves the production of antibodies by B cells to fight extra-cellular pathogens. The cell-mediated response is carried out by T-cells that destroy infected cells by **apoptosis**. **Cytotoxic T cells** target cancer cells specifically.
 
 # V. Societies
 
+We now arrive at our last stop on this introductory tour of Biology. This section tackles the last rung on the scales of life. We'll consider **societies** to be groups of living things living together within the bounds of a closed system. This broad definition encompasses different **species** living together in communities, and the processes by which they adapt to their environments over time. 
+
 ### A. Evolution of Populations
+
+The *Darwinian** theory of evolution states that species evolve by the selection of desirable traits within a population over time. This concept is also referred to as the **survival of the fittest**. Individuals the greater *fitness* reproduce a pass of their genes to future generations. Variations within a population are the result of sexual reproduction and random genetic mutations. This phenomenon calls back to our discussions of DNA. Darwin noted differences between the beaks of fiches. These slight variations of common features are called **homologies**.
+
+Evolution can only occur at the population level. Individuals can *not* evolve throughout a lifetime. We can tell if a species is evolving using criteria developed by the scientists Hardy and Weinberg. These requirements are as follows.
+
+1. Mutations occur.
+2. Gene flow exists.
+3. Individuals do *not* mate at random.
+4. Relatively small population size.
+5. Selection of individuals.s
+
+Here, **gene flow** simply refers to the movement of genetic material from one population to another. Any species that fails to meet any of these criteria is *not* evolving.
+
+We consider five types of natural selection in the chart below.
+
+| Variant | Description |
+| --- | --- |
+| Directional Selection | Favors the *average* phenotype over time. |
+| Stabilizing Selection | Favors *extreme* phenotypes at one end of the distribution of the population. |
+| Disruptive Selection | Favors individuals with phenotypes at *both extremes* of the population distribution. |
+| Sexual Selection | Selects for traits that improve the odds of *mating success*. |
+| Balancing Selection | Favors the *heterozygote* at a given locus. |
 
 ## VI. Bibliography
 1. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10123176/. 
