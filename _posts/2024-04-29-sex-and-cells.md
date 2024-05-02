@@ -41,19 +41,19 @@ One special type of organic molecule, the **amino acid**, acts as the building b
 
 Take a look at an abstracted amino acid in the figure below.
 
-![Amino Acid](pictures/amino-acid-fig.webp)
+![Amino Acid](../pictures/amino-acid-fig.webp)
 
 We also say that amino acids have four levels of *structure* organized by scale.
 
-![Amino Acid Structure](pictures/amino-acid-struct.png)
+![Amino Acid Structure](../pictures/amino-acid-struct.png)
 
 
 ### B. Macromolecules
 We'll now take a closer look at three important macromolecules (our next step up on the ladder of scale). Each macromolecule is made up of a unique monomer. **Proteins**, as mentioned earlier, are formed from long chains of amino acid monomers. **Carbohydrates**, or simple, starchy sugars, and comprised of the monomer **monosaccharides**. These monosaccharides can combine in a process called a **dehydration reaction**, and decouple via **hydrolosis**. The important thing to remember here is that dehydration ***combines***  molecules and hydrolysis ***breaks them apart***.
 
-![Dehydration Reaction](pictures/dehydration-ka.png)
+![Dehydration Reaction](../pictures/dehydration-ka.png)
 
-![Hydrolysis Reaction](pictures/hydrolysis-ka.png)
+![Hydrolysis Reaction](../pictures/hydrolysis-ka.png)
 
 Any gym bros reading this might be able to guess what our last macromolecule is. That's right, **Fats**! Fats are **lipids**, another sub-class of organic molecules. that primarily store energy in organisms. Unlike our previous macromolecules, fats do **not** have a unique monomer. We say that fats are **hydrophobic** (water-fearing) because these repel water. This is probably intuitive to anyone who leaves a can of grease out to congeal overnight. In the morning you'll probably discover water left on top, and hardened fat left on bottom.
 
@@ -77,7 +77,7 @@ We stated earlier that diffusion can occur without *energy* because substances l
 
 Cells can also inject or remove large particles by **endocytosis** and **exocytosis** respectively. 
 
-![Active vs. Passive Transport](/pictures/active-passive-transport.png)
+![Active vs. Passive Transport](../pictures/active-passive-transport.png)
 
 ### D. Cell Signaling
 Cells are rarely acting alone. Most cells are part of larger, complex structures with functions that far exceed the capabilities of a single living thing. So, to achieve this superior functionality, cells must work together. Teamwork requires communication. 
@@ -90,7 +90,7 @@ These cells are a bit like the watchtower guards of the body. We'll break down t
 
 We can further divide hormone signaling into **water-soluble** and **lipid-soluble** hormones. In water-soluble hormone signaling, hormones are *polar* and thus are unable to cross the cell membrane. In lipid-soluble signaling, messages pass right through the exterior of the cell and into the **cytoplasm**. More details regarding these different processes are included in the figure below.
 
-![Water-Soluble vs. Lipid-Soluble Horomone Signaling](pictures/lipid-water-soluble-horomones.webp)
+![Water-Soluble vs. Lipid-Soluble Horomone Signaling](../pictures/lipid-water-soluble-horomones.webp)
 
 ### E. Enzymes
 We'll now briefly discuss **enzymes**, some of the unsung heroes of life on Earth. Cells require several chemical processes to perform their basic functions. These reactions occur quite slowly by default in nature. Even ordinary biological processes such as the conversion of starches into sugars could take thousands of years without intervention!
@@ -188,7 +188,7 @@ Mitosis contains many steps and sub-steps. For the sake of simplicity, we will o
 6. **Cytokinesis**
     - Finally, the cell's cytoplasm splits into two complete daughter cells.
 
-![Mitosis](pictures/mitosis.png)
+![Mitosis](../pictures/mitosis.png)
 
 **Differentiation** is the process by which cells take on specialized roles following cell division. Cells in the human body perform a vast array of functions. Therefore, not every cell needs to divide continuously through the human life span. Some non-dividing cells such as nerve and muscle cells lack a "go-ahead" signal during the G1 phase of interphase. This exclusion prevents these cells from dividing by mitosis. As a result, the loss of nerve or muscle cells can be especially devastating in human beings.
 
@@ -213,7 +213,7 @@ Meiosis consists of two divisions, and unlike mitosis, *does* lead to an increas
 
 This process represents one more time during prophase II, metaphase II, anaphase II, and telophase II to create a total of 4 **haploid** cells.
 
-![Meosis](pictures/meosis.png)
+![Meosis](../pictures/meosis.png)
 
 ### C. DNA & RNA
 
@@ -231,13 +231,13 @@ Ultimately, DNA and RNA work together to create proteins throughout a multi-stag
 
 Next, messages carried by RNA are decoded in the **ribosomes** during the process of **translation** to make proteins. Let's take a look at this process in action.
 
-![Transcription](pictures/transcription-high-res.webp)
+![Transcription](../pictures/transcription-high-res.webp)
 
 Specifically, sequences of base pairs are mapped to different amino acids. This is analogous to the process of encoding and decoding some piece of information on your computer. We define a group of three DNA or RNA nucleotides to be a **codon**. Each codon can code for a specific amino acid or stop sequence in the context of translation. The stop sequence simply marks the end of the translation process. There are three stop codons, **UAA**, **UAG**, and **UGA**, and one start codon, **AUG**.
 
 Messenger RNA (mRNA) carries messages encoded in DNA through the cell. Translation RNA (tRNA) is responsible for fetching the right amino acids by matching **anticodons** to the codons of an mRNA strand. This process is shown in the diagram below.
 
-![Translation](pictures/translation.webp)
+![Translation](../pictures/translation.webp)
 
 Let's sum up the two main processes by which genetic information passes through the cell. DNA acts as long-term storage that is read and copied by RNA polymerase into mRNA during transcription. Next, these mRNA strands then bind to ribosome molecules in the cytoplasm. Here, multiple "blocks" of tRNA coding for unique amino acids bind to the mRNA strand. The ribosome moves over the strand like a reader or `pointer`. All the while proteins are produced for every three nucleotides processed and are added to the back of the growing peptide chain similar to an `append` operation. The procedure of translation begins at a start codon and terminates at a stop codon. 
 
@@ -258,7 +258,7 @@ We must emphasize, however, that mutations are not inherently good *or* bad. Mut
 
 We'll work through a few examples of mutations in the diagram below.
 
-![Mutations](pictures/mutations.jpg)
+![Mutations](../pictures/mutations.jpg)
 
 ### E. Inheritance
 
@@ -276,11 +276,11 @@ When working with punnet squares make a few assumptions. For now, each parent ca
 
 Notice how even one large "B" is enough to dominate over the recessive "b". We'll say that individuals who carry two of the same "cased" alleles are **homozygous**, and those who carry dominant and recessive alleles for a trait are  **heterozygous**. Let's look at a complete punnett square representing a cross between two pea plants. Pea plants were the first organisms to be studied in such a way. Again, note how plants with just one large "G" are green in color.
 
-![Pea Plant Cross](pictures/punnet-square.png)
+![Pea Plant Cross](../pictures/punnet-square.png)
 
 This experiment isolates the inheritance of one trait, and is referred to as a **monohybrid cross**. We can construct our punnet square to handle an infinite number of traits, however. Below is an example of **dihybrid-cross**, or cross isolating *two* traits. Note that our chart gets exponentially bigger. For this reason, we typically just look at one trait at a time using a Punnett square.
 
-![Dihybrid Cross](pictures/dihybrid-cross.png)
+![Dihybrid Cross](../pictures/dihybrid-cross.png)
 
 ### F. Human Reproduction
 
@@ -290,11 +290,11 @@ Human sex cells come in male (**sperm**) and female (**egg**) varieties. These c
 
 We start from the female perspective. Egg cells release from a **follicle** in the **ovary**. This follicle then becomes a **corpus lute**, which secretes hormones that aid in pregnancy. The egg is transported from the ovary to the **uterus** via the **oviduct**, where **normal implantation** may occur. **Oogenesis**, or the creation of new egg cells, starts at birth and ends after puberty.
 
-![Female Reproductive System](pictures/female.jpg)
+![Female Reproductive System](../pictures/female.jpg)
 
 Now for the dudes. Sperm are the sex cells of males. Sperm development occurs in the **testes**, which are kept *outside* the body at a slightly lower temperature. New sperm form through **spermatogenesis** within the **seminiferous tubules**. On the journey towards the outside of the body, sperm travel through the testes, **epididymis**, **vas defers**, **ejaculatory duct**, and **urethra** sequentially. Several glands, including the **prostate** and **bulbourethral** glands further support **semen** production and ejaculation. 
 
-![Male Reproductive System](pictures/male-reproductive-system.jpeg)
+![Male Reproductive System](../pictures/male-reproductive-system.jpeg)
 
 Production of semen is precipitated by the release of **LH** and **FSH** hormones by the **pituitary gland**. High **testosterone** lowers LH and FSH. The balance of hormonal signals in men and women keeps each respective system in **homeostasis** (balance). 
 
@@ -309,7 +309,7 @@ Approximately once a month, an egg is prepared for fertilization during **ovulat
 4. Luteal Phase
     - The emptied follicle turns into a new structure called the **corpus luteum** responsible for producing progesterone and estrogen. The uterine lining is now at maximum thickness and is prepared for implantation. If the egg is not fertilized, the corpus luteum will degrade and disappear.
 
-![Mentstral Cycle Horomone Chart](pictures/menstral-horomone-chart.png)
+![Mentstral Cycle Hormone Chart](../pictures/menstral-horomone-chart.png)
  
 # IV. Systems
 
@@ -321,9 +321,9 @@ In living things, internal mechanisms work to maintain balance with an external 
 
 Innate immunity includes all the mechanisms humans acquire at birth. These defenses include skin, mucous membranes, stomach acid, **natural killer** cells, and more. Innate immunity is fast immunity and responds if not instantly, very quickly to foreign threats.
 
-Acquired immunity occurs as humans gain exposure to new diseases over time. This form of immunity is slow. White blood cells or **lymphocytes**, are responsible for identifying and destroying foreign pathogens. **T cells** and **B cells** target **antigens**, or any substance that causes a bodily response. B cells specifically produce **antibodies**,  proteins that latch on to **antigens**. Upon detecting a foreign invader, B, and T cells proliferate through the body via **clonal selection**. Initial responses to a novel disease are typically slow. However, cellular "memory" allows the body to quickly fight the same disease in subsequent encounters. We say that **adaptive immunity** is **specific** and has **memory**.
+Acquired immunity occurs as humans gain exposure to new diseases over time. This form of immunity is slow. White blood cells or **lymphocytes**, are responsible for identifying and destroying foreign pathogens. **T cells** and **B cells** target **antigens**, or any substance that causes a bodily response. B cells specifically produce **antibodies**,  proteins that latch on to **antigens**. Upon detecting a foreign invader, B, and T cells proliferate through the body via **clonal selection**. Initial responses to a novel disease are typically slow. However, cellular "memory" allows the body to fight the same disease in subsequent encounters quickly. We say that **adaptive immunity** is **specific** and has **memory**.
 
-![The Primary and Secondary Immune Responses](pictures/primary-secondary-immune-responses.jpeg)
+![The Primary and Secondary Immune Responses](../pictures/primary-secondary-immune-responses.jpeg)
 
 Adaptive immunity fights disease using via dual defense mechanism. This system employs **humoral** and **cell-mediated** immune responses. The humoral immune response involves the production of antibodies by B cells to fight extra-cellular pathogens. The cell-mediated response is carried out by T-cells that destroy infected cells by **apoptosis**. **Cytotoxic T cells** target cancer cells specifically.
 
