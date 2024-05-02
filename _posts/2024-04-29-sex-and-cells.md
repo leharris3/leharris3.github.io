@@ -27,10 +27,10 @@ We'll organize this document into four primary sections.
 
 ## Structure
 
-1. Cells
-2. Sex
-3. Systems
-4. Societies
+1. **Cells**
+2. **Sex**
+3. **Systems**
+4. **Societies**
 
 Notice that we try our best to group concepts by relative scale. Before we jump into cells, however, we need a good definition of life. What makes a thing a "living thing" anyway? We say a thing is "alive" if it meets specific criteria (or rules). There is no *official* set of rules for life -- but generally, biologists agree that living things must be able to "respire, grow, excrete, reproduce, metabolize, move, and be responsive to the environment" [1]. These rules imply that things like our friend the Amoeba are living things, but viruses, for example, don't make the cut. As a result, biology excludes any hunk of matter not conforming to these criteria.
 
