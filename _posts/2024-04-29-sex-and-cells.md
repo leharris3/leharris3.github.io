@@ -4,40 +4,44 @@
 ---
 
 ## Primer
-Welcome all! If somehow you've stumbled across the blog post, please note that this is ***not*** an authoritative guide to introductory biology. This document is a *study resource*, created by me (not a biologist) to prepare for a final exam taught by the wonderful [Dr. Claytor](https://www.linkedin.com/in/jordan-claytor-phd-619903b0/) at the University of North Carolina Chapel Hill. If you have any comments or suggestions, please reach out to my school [email](levlevi@email.unc.edu).
+Welcome all! If somehow you've stumbled across this blog post, please note that this is ***not*** an authoritative guide to introductory biology. This document is a *study resource*, created by me (not a biologist) to prepare for a final exam taught by the wonderful [Dr. Claytor](https://www.linkedin.com/in/jordan-claytor-phd-619903b0/) at the University of North Carolina Chapel Hill.  You can reach me at my school [email](levlevi@email.unc.edu) with any comments or suggestions.
 
 ## I. Introduction
-Biology is the **study of life**. It is an exploration of the structure and function of all living things. Life and Biology generally bear several similarities to the world of Computer Science. Upon closer inspection, life appears to work a lot like a computer. For living to function, they must break up complicated tasks into many well-defined sub-tasks. In the same way that your computer (the one you are reading this document on now) divides functionality into different components (e.g., CPU, RAM, etc), so to do living things employ a sort of compartmentalization. 
+Biology is the **study of life**. It is an exploration of the structure and function of all living things. Life and biology generally bear several similarities to the world of Computer Science. Upon closer inspection, life appears to work a lot like a computer. For living things to function, they must break up complicated tasks into many well-defined sub-tasks. In the same way that computers divide functionality into different components (e.g., CPU, RAM, etc), so to do living things employ a sort of compartmentalization. 
 
-We divide Biology into **five major themes** to make it a little more palatable.
+We divide biology into **five major themes** to make it a little more palatable.
 
 1. Evolution
-2. Flow of Information: This includes the exchange of genetic material between organisms.
-3. Structure and Function: Plainly, what do components of life look like and what do they do?
-4. Transformation of Matter and Energy: Life is matter fueled by energy, as a result, the interactions between these two concepts become important.
-5. Interactions Between Systems: Here we refer to biological systems big and small. These can be ecosystems or hormonal systems.
+2. Flow of Information
+This topic involves the exchange of genetic material between organisms.
+3. Structure and Function
+What do components of life look like, and what do they do?
+4. Transformation of Matter and Energy
+Life is matter fueled by energy. As a result, the interactions between these two concepts are vital.
+5. Interactions Between Systems
+Here, we refer to biological systems, both big and small. These can be ecosystems or hormonal systems.
 
-So we can say that life follows a kind of hierarchy. Living things and their components can be organized from small to big to stuff in a meaningful way. It is our goal in this exploration to develop a top-to-bottom understanding of the basics of biology. This isn't easy. Biology is a big field and spans a nearly endless number of topics. Therefore, as we work our way up the scales of life, we may be forced to take the occasional detour. This is necessary so that we don't leave out vital Biological processes that may be needed later.
+So, we can say that life follows a kind of hierarchy. We organize living things and their components from small to big meaningfully. We aim in this exploration to develop a top-to-bottom understanding of the basics of biology. This task isn't easy. Biology is a big field spanning an endless number of topics. Therefore, as we work our way up the scales of life, we may be forced to take the occasional detour. These diversions are necessary to avoid leaving out vital Biological processes that may be needed later.
 
 We'll organize this document into four primary sections.
 
-## Course Structure
+## Structure
 
 1. Cells
 2. Sex
 3. Systems
 4. Societies
 
-Notice that we try our best to group concepts by relative scale. Before we jump into cells, however, it is necessary to provide a good definition of life. What makes a thing a "living thing" anyway? We say that a thing is "alive" if it meets a special set of criteria (or rules). There is no *official* set of rules for life, but generally, biologists agree that living things must be able to "respire, grow, excrete, reproduce, metabolize, move, and be responsive to the environment" [1]. This means that things like our friend the Amoeba are considered living, but viruses for example don't cut. As a result, any hunk of matter not conforming to these criteria is excluded from discussions of Biology.
+Notice that we try our best to group concepts by relative scale. Before we jump into cells, however, we need a good definition of life. What makes a thing a "living thing" anyway? We say a thing is "alive" if it meets specific criteria (or rules). There is no *official* set of rules for life -- but generally, biologists agree that living things must be able to "respire, grow, excrete, reproduce, metabolize, move, and be responsive to the environment" [1]. These rules imply that things like our friend the Amoeba are living things, but viruses, for example, don't make the cut. As a result, biology excludes any hunk of matter not conforming to these criteria.
 
 ## II. Cells
 
-Cells are the smallest unit of life. Cells are both **alive** and **make up living things**. This means that big, complicated living things like yourself are made up of many tiny, smaller living things. Neat! But before we can dive into cells, we need to talk about the non-living stuff that makes up cells.
+Cells are the smallest unit of life. Cells are both **alive** and **make up living things**. Therefore, huge living things like yourself contain many tiny living things. Neat! But before we dive into cells, we need to talk about the non-living stuff that makes up cells.
 
 ### A. Organic Molecules
-**Organic molecules** are the building blocks of cells. We consider an organic molecule to be any chemical compound (a bunch of atoms bound together) in which a **carbon atom is bound to a hydrogen atom**. Small organic molecules are called **monomers**, and can combine into larger organic molecules called **polymers**. Together these molecules bind to provide the raw material of life.
+**Organic molecules** are the building blocks of cells. We define an organic molecule as any chemical compound (a bunch of atoms bound together) in which a **carbon atom is bound to a hydrogen atom**. Small organic molecules are **monomers** and can combine into larger organic molecules called **polymers**. Together, these molecules bind to provide the raw material of life.
 
-One special type of organic molecule, the **amino acid**, acts as the building block for **proteins**. Proteins are a type of **macromolecule** (or *large* molecule), that perform an incredible variety of tasks in living things. We'll get back to proteins later. We say that all amino acids are composed of three basic components, an **amino group**, an **acidic carboxyl group**, and an **R-Group**. These are just the common chemical components of all amino acids. For example, if we looked at a diagram of any of the 20 amino acid variants, we would be able to spot all of these different parts. The R-Group is a little bit like the *thumbprint* of each amino acid. That is, each amino acid is primarily distinguishable by its unique R-Group.
+One exceptional type of organic molecule, the **amino acid**, acts as the building block for **proteins**. Proteins are a type of **macromolecule** (or *large* molecule) that perform an incredible variety of tasks in living things. We'll get back to proteins later. All amino acids contain three essential components: an **amino group**, an **acidic carboxyl group**, and an **R-Group**. These are the general chemical components of all amino acids. For example, if we looked at a diagram of any of the 20 amino acid variants, we could spot all these different parts. The R-Group is like the *thumbprint* of each amino acid. That is, each amino acid is primarily distinguishable by its unique R-Group.
 
 Take a look at an abstracted amino acid in the figure below.
 
@@ -49,60 +53,60 @@ We also say that amino acids have four levels of *structure* organized by scale.
 
 
 ### B. Macromolecules
-We'll now take a closer look at three important macromolecules (our next step up on the ladder of scale). Each macromolecule is made up of a unique monomer. **Proteins**, as mentioned earlier, are formed from long chains of amino acid monomers. **Carbohydrates**, or simple, starchy sugars, and comprised of the monomer **monosaccharides**. These monosaccharides can combine in a process called a **dehydration reaction**, and decouple via **hydrolosis**. The important thing to remember here is that dehydration ***combines***  molecules and hydrolysis ***breaks them apart***.
+We'll now examine three critical macromolecules (our next step up on the ladders of scale). Each macromolecule contains a unique monomer. **Proteins**, as mentioned earlier, are formed from long chains of amino acid monomers. **Carbohydrates**, or simple, starchy sugars, are comprised of the monomer **monosaccharides**. These monosaccharides can combine in a **dehydration reaction** and decouple via **hydrolysis**. The key takeaway is that dehydration ***combines***  molecules -- and hydrolysis ***breaks them apart***.
 
 ![Dehydration Reaction](/pictures/dehydration-ka.png)
 
 ![Hydrolysis Reaction](/pictures/hydrolysis-ka.png)
 
-Any gym bros reading this might be able to guess what our last macromolecule is. That's right, **Fats**! Fats are **lipids**, another sub-class of organic molecules. that primarily store energy in organisms. Unlike our previous macromolecules, fats do **not** have a unique monomer. We say that fats are **hydrophobic** (water-fearing) because these repel water. This is probably intuitive to anyone who leaves a can of grease out to congeal overnight. In the morning you'll probably discover water left on top, and hardened fat left on bottom.
+Any gym bros reading this might be able to guess our last macromolecule. That's right, **Fats**! Fats are **lipids**, another sub-class of organic molecules. that primarily store energy in organisms. Unlike our previous macromolecules, fats do **not** have a unique monomer. Fats are **hydrophobic** (water-fearing) because they repel water. This fact is intuitive to anyone who leaves a can of grease out to congeal overnight. In the morning, you'll probably discover water left on top of the can and hardened fat left on the bottom.
 
-One other special kind of lipid is the **phospholipids**. These molecules are hydrophobic, and as a result, make up the outer membrane of cells. A double layer of these lipids keeps water *in* and *out* of the cell!
+One other special kind of lipid is the **phospholipids**. These molecules are hydrophobic and make up the outer membrane of cells. A double layer of these lipids keeps water *in* and *out* of the cell!
 
-Briefly, we'll mention one more very special macromolecule: **DNA**. DNA is composed of **nucleotide** monomers and uses **hydrogen bonds** to hold together their double helix shape. We'll have plenty more to say about DNA a little later.
+We'll mention one more particular macromolecule: **DNA**. DNA contains **nucleotide** monomers and uses **hydrogen bonds** to hold a double helix shape. We'll have plenty more to say about DNA a little later.
 
 ![Phospholipid Bi-Layer](/pictures/phospholipid.jpg)
 
 ### C. The Cell Membrane
 
-Now we get the barrier of the cell: the **cell membrane**. This vital structure controls the passage of materials in and out of the cell. We say the cell membrane has **selective permeability**, which is just a fancy way of saying it only lets some specific stuff in or out. Proteins embedded in the lipid layer of the membrane give it a **fluid mosaic** property. This means that the cell membrane is highly flexible and dynamic.
+Now, we get the barrier of the cell: the **cell membrane**. This vital structure controls the passage of materials in and out of the cell. We say the cell membrane has **selective permeability**, which is just a fancy way of saying it only lets some specific stuff in or out. Proteins embedded in the lipid layer of the membrane give it a **fluid mosaic** property. Therefore, the cell membrane is highly flexible and dynamic.
 
 There are a few different ways that things can cross the cell membrane. One such mechanism is **passive transport** – the **diffusion** of substances across a membrane without energy. This process occurs when a substance moves from an area of *high* concentration to *low* concentration. A classic example of diffusion occurs when you leave a hot pan out on the stove to cool. Heat moves from the pan (an area of **high** energy concentration) to the surrounding air (**low** energy concentration).
 
-The lipid-bilayer structure of the cell membrane keeps out **polar** and charged molecules. A polar molecule is simply any molecule that has opposite charges on either end. Water (H2O) is one such example of a polar molecule. Therefore, molecules like O2 and CO2 can easily cross the cell membrane, while polar molecules can not. Water can cross the cell membrane, however, through a process known as **osmosis**. It is crucial that cells maintain the *correct balance* of water, and so H2O can only cross the cell membrane in certain instances.
+The lipid-bilayer structure of the cell membrane keeps out **polar** and charged molecules. A polar molecule is any molecule that has opposite charges on either end. Water (H2O) is one such example of a polar molecule. Therefore, molecules like O2 and CO2 can easily cross the cell membrane, while polar molecules can not. However, water can cross the cell membrane through a process known as **osmosis**. Cells must maintain the *correct balance* of water. Therefore,  H2O can only cross the cell membrane in certain instances.
 
 So when does water cross the cell membrane? The answer depends on the relative **tonicity** of the surrounding medium. Tonicity refers to the ability of a surrounding solution to cause a cell to gain or lose water. We say a cell is **isotonic** when tonicity is equal in and out of the cell. A cell is **hypertonic** when solute concentration is higher outside a cell, and **hypotonic** under the *opposite* conditions.
 
-We stated earlier that diffusion can occur without *energy* because substances like to travel from areas of *high* to *low* concentration. But can molecules move the other way, from areas of *low* to *high* concentration? The answer is yes, albeit with a little help. **Facilitated diffusion** is the movement of substances from low to high concentration aided by **transport proteins**. These transport proteins provide the energy (e.g., **ATP**) required to overcome the friction caused by the diffusion gradient.
+We stated earlier that diffusion can occur without *energy* because substances like to travel from areas of *high* to *low* concentration. But can molecules move the other way, from *low* to *high* concentration? The answer is yes, albeit with help. **Facilitated diffusion** is the movement of substances from low to high concentration aided by **transport proteins**. These transport proteins provide the energy (e.g., **ATP**) required to overcome the friction caused by the diffusion gradient.
 
-Cells can also inject or remove large particles by **endocytosis** and **exocytosis** respectively. 
+Cells can inject or remove large particles by **endocytosis** and **exocytosis**. 
 
 ![Active vs. Passive Transport](/pictures/active-passive-transport.png)
 
 ### D. Cell Signaling
 Cells are rarely acting alone. Most cells are part of larger, complex structures with functions that far exceed the capabilities of a single living thing. So, to achieve this superior functionality, cells must work together. Teamwork requires communication. 
 
-The vast array of cells in the human body communicate by two primary mechanisms: **chemical** and **electrical signaling**. Chemical signals create slow, long-lasting responses in the body. These signals might include a prompt to the testes to create more testosterone or a series of signals that start an immune response. Electric signals, by contrast, are fast-acting and short-lasting. These signals target the muscles, neurons, and other rapid-fire structures in the body.
+The vast array of cells in the human body communicate by two primary mechanisms: **chemical** and **electrical signaling**. Chemical signals create slow, long-lasting responses in the body. These signals might include a prompt to the testes to produce more testosterone or a series of signals that start an immune response. Electric signals, by contrast, are fast-acting and short-lasting. These signals target the muscles, neurons, and other rapid-fire structures in the body.
 
-Hormone signals, as alluded to earlier, are *chemical* signals. These messages rely on **target cells**, or cells outfitted with **specific receptors** that allow them to respond to chemical messages produced from disparate parts of the body. **Hormone receptors** can appear on both the inside and outside of the cell membranes. These receptors are sites that allow hormone signals to bind to the cell.
+Hormone signals, as alluded to earlier, are *chemical* signals. These messages rely on **target cells**, or cells outfitted with **specific receptors** that allow them to respond to chemical messages produced from disparate body parts. **Hormone receptors** can appear on both the inside and outside of the cell membranes. These receptors are sites that allow hormone signals to bind to the cell.
 
-These cells are a bit like the watchtower guards of the body. We'll break down the stages of hormone signaling into three parts, **reception**, **transduction**, and **response**. At a high level, we can think of each stage like this, respectively: "a message is received, a message is processed, and a response is sent."  
+These cells are a bit like the watchtower guards of the body. We'll break down the stages of hormone signaling into three parts, **reception**, **transduction**, and **response**. At a high level, we can think of each stage like this: "A message is received, a message is processed, and a response message returns from the cell."  
 
-We can further divide hormone signaling into **water-soluble** and **lipid-soluble** hormones. In water-soluble hormone signaling, hormones are *polar* and thus are unable to cross the cell membrane. In lipid-soluble signaling, messages pass right through the exterior of the cell and into the **cytoplasm**. More details regarding these different processes are included in the figure below.
+We can further divide hormone signaling into **water-soluble** and **lipid-soluble** hormones. In water-soluble hormone signaling, hormones are *polar* and thus can not cross the cell membrane. In lipid-soluble signaling, messages pass through the cell exterior into the **cytoplasm**. We provide more details regarding these different processes in the figure below.
 
 ![Water-Soluble vs. Lipid-Soluble Horomone Signaling](/pictures/lipid-water-soluble-horomones.webp)
 
 ### E. Enzymes
-We'll now briefly discuss **enzymes**, some of the unsung heroes of life on Earth. Cells require several chemical processes to perform their basic functions. These reactions occur quite slowly by default in nature. Even ordinary biological processes such as the conversion of starches into sugars could take thousands of years without intervention!
+We'll now briefly discuss **enzymes**, some of the unsung heroes of life on Earth. Cells require several chemical processes to perform essential functions. These reactions occur quite slowly by default in nature. Even ordinary biological processes like the conversion of starches into sugars could take thousands of years without intervention!
 
-This is where enzymes come in. Enzymes are proteins that bind to the active sites of **substrates** (or **reactants**) in chemical reactions. By lowering the **activation energy** required for reactions to occur, enzymes *dramatically* increase reaction speed.
+Here's where enzymes come into play. Enzymes are proteins that bind to the active sites of **substrates** (or **reactants**) in chemical reactions. By lowering the **activation energy** required for chemical reactions to occur, enzymes *dramatically* increase reaction speed.
 
 ### F. Cellular Respiration
-Now let's take a look at one of the most fundamental processes in all of nature, **cellular respiration**. But before we jump in, we need to brush up on a little chemistry. In chemical reactions, we say that an **oxidation** occurs when an atom *loses* an electron. By contrast, **reduction** occurs when an atom *gains* an electron. We can remember these terms with the useful nuemonic **OILRIG**. The processes always go hand and hand. Any time one atom loses an electron, another must *gain* an electron. Therefore, these processes are often referred to together as **redox** reactions. These terms will come in handy later when discussing the transfer of energy during chemical reactions in cells.
+Now, let's discuss **cellular respiration**, an essential component of all living things. First, we need to brush up on some chemistry. In chemical reactions, we say that an **oxidation** occurs when an atom *loses* an electron. By contrast, **reduction** occurs when an atom *gains* an electron. We can remember these terms with the nuemonic **OILRIG**. The processes always go hand in hand. When one atom loses an electron, another must *gain* an electron. Therefore, these processes are known as **redox** reactions. These terms will come into play when discussing energy transfer during chemical reactions.
 
-Now we are ready to talk about cellular respiration. Cellular respiration is the *primary* process by which cells make energy. Almost all organisms on Earth use some form of cellular respiration, even plants! We'll specifically examine a few different flavors of energy when talking about the *kinds* of energy organisms produce. Namely, we'll look at **chemical/potential** and **thermal/kinetic** energy. The commonality between these subclasses is that they all represent the same basic thing, the ability to do work.
+Now, we are prepared to talk about cellular respiration. Cellular respiration is the *primary* process by which cells make energy. Almost all organisms on Earth use some form of cellular respiration, even plants! We'll specifically examine a few different flavors of energy when talking about the *kinds* of energy organisms produce. Namely, we'll look at **chemical/potential** and **thermal/kinetic** energy. The commonality between these subclasses is that they all represent the same thing: the ability to perform work.
 
-Cellular respiration is essentially a conversion of chemical energy from nutrients into energy-poor **ATP**. Here, the reactants glucose and oxygen are transformed into carbon dioxide, water, and ATP. This process occurs on a higher level every time you take a breath! We can write the chemical equation for this process as such:
+Cellular respiration converts chemical energy from nutrients into energy-poor **ATP**. Glucose and oxygen transform into carbon dioxide, water, and ATP. This process occurs on a higher level every time you take a breath! We can write the chemical equation for this process as such:
 
 $$C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O + \text{energy}$$
 
@@ -127,43 +131,43 @@ Let's walk through the three stages of cellular respiration in **eukaryotic** ce
     - Inputs: `[NADH, FADH2, Oxygen]`
     - Outputs: `[Water, 28-ATP]`
 
-`*` *Coenzyme A converts pyruvate into acetyl-CoA in between stages one and two.*
+`*` *Coenzyme A converts pyruvate into acetyl-CoA between stages one and two.*
 
 ![Cellular Respiration](/pictures/cellular-respiration-v2.jpg)
 
-Oxidative phosphorylation is important enough to get it discussion. During the previous stages, the cofactors **NAD+** and **FAD** are reduced (receive electrons) to form **NADH** and **FADH2**, respectively. These cofactors are like cargo bays that can be filled with electrons to be dumped off somewhere else in the cell. During oxidative phosphorylation, our cofactors are *oxidized* to produce molecules of ATP. Hence the name, *oxidative* phosphorylation. 
+Oxidative phosphorylation is vital enough to be discussed separately. During the previous stages, the cofactors **NAD+** and **FAD** reduce (receive electrons) to form **NADH** and **FADH2**. These cofactors are like cargo bays that fill up with electrons to be dumped somewhere else in the cell. During oxidative phosphorylation, our cofactors are *oxidized* to produce molecules of ATP. Hence the name, *oxidative* phosphorylation. 
 
-This entire process of moving electrons within the mitochondria is facilitated by something called the **electron transport chains**. These structures are simply a collection of proteins and other molecules in mitochondria that enable redox reactions to occur. Ultimately, approximately *26 molecules* of ATP are created by **ATP synthase** from **ADP** and phosphate as electrons move down the electron transport chains. This process is referred to as **chemiosmosis** in the context of oxidative phosphorylation. The movement of **H+ ions** down the electron transport chains creates a **proton gradient**. ATP synthase allows H+ ions to move from areas of low to high concentration along this graduate. This release of energy fuels the conversion of ADP into ATP.
+Electrons movement within the mitochondria occurs along the **electron transport chains**. These structures are simply a collection of proteins and other molecules in mitochondria that enable redox reactions. Ultimately, approximately *26 molecules* of ATP are created by **ATP synthase** from **ADP** and phosphate as electrons move down the electron transport chains. We call this process **chemiosmosis** in the context of oxidative phosphorylation. The movement of **H+ ions** down the electron transport chains creates a **proton gradient**. ATP synthase allows H+ ions to move from low to high concentration along this graduate. This release of energy fuels the conversion of ADP into ATP.
 
-We also mention that **glycolysis** is responsible for producing an additional two molecules of ATP during the third stage of cellular respiration. The process oxidizes glucose into lactate (pyruvate) without the need for oxygen. This process is also referred to as **fermentation**. That burning sensation in your muscles that comes at the end of a hard workout can be explained by this phenomenon. Lactic acid is produced more rapidly than your body can remove it as cells attempt to create energy in an *anaerobic* environment.
+We also mention that **glycolysis** produces an additional two molecules of ATP during the third stage of cellular respiration. The process oxidizes glucose into lactate (pyruvate) without oxygen. This process is known as **fermentation**. That burning sensation in your muscles at the end of a hard workout is an example of fermentation. Lactic acid builds up more rapidly than your body can remove. Here, cells attempt to create energy in an *anaerobic* environment.
 
 ![Oxidative Phosphorlyation](/pictures/oxidative-phosphorlyation.png)
 
 ### G. Photosynthesis
 
-Photosynthesis is a bit like the hippie cousin of cellular respiration. Similarly, photosynthesis is a *two-staged chemical reaction* that involves the production of energy-rich products from reactants. This process, as you may have guessed, occurs in plants. Specifically, photosynthesis occurs in the **chloroplasts** of plant cells where carbon dioxide and water convert into glucose and oxygen. Again, we can write a general equation for this reaction like so:
+Photosynthesis is a bit like the hippie cousin of cellular respiration. Similarly, photosynthesis is a *two-staged chemical reaction* that involves the production of energy-rich products from reactants. This process, as you may have guessed, occurs in plants. Specifically, photosynthesis occurs in the **chloroplasts** of plant cells -- where carbon dioxide and water convert into glucose and oxygen. Again, we can write a general equation for this reaction like so:
 
 $$6CO_2 + 6H_2O + \text{light energy} \rightarrow C_6H_{12}O_6 + 6O_2$$
 
-Photosynthesis broadly takes place within the **stroma** of chloroplasts. Here two sub-processes occur simultaneously: the **light-dependent reactions** and the **Calvin cycle**. 
+Photosynthesis broadly takes place within the **stroma** of chloroplasts. Here, two sub-processes happen simultaneously: the **light-dependent reactions** and the **Calvin cycle**. 
 
 ![Photosynthesis in a Plant Cell](/pictures/photosynthesis.png)
 
-*Light-dependent* reactions take place in the **thylakoid membranes** of chloroplasts. During this process, light energy from the sun helps split water molecules into oxygen, protons, and electrons. Oxygen is released as a by-product of this reaction, and high-energy electrons travel through the electron transport chain. Energy-carrying molecules ATP and NADPH produced during these reactions carry on to the Calvin Cycle.
+*Light-dependent* reactions take place in the **thylakoid membranes** of chloroplasts. During this process, light energy from the sun helps split water molecules into oxygen, protons, and electrons. This reaction releases oxygen, and high-energy electrons travel through the electron transport chain. Energy-carrying molecules ATP and NADPH produced during these reactions carry on to the Calvin Cycle.
 
-**Photosystems I** and **II** are the components of the light-dependent reactions responsible for *absorbing energy from the sun*. Ironically, photosystem II is the first of these systems to come into play. This system is responsible for extracting oxygen molecules from water within the thylakoid membranes. Photosystem I has a slightly more niche role. Here electrons are 'boosted' or 'excited' so that NADP+ can reduce to NADPH. Below is a rather complicated diagram of these two systems at work. Try to understand their high-level differences.
+**Photosystems I** and **II** are the components of the light-dependent reactions responsible for *absorbing energy from the sun*. Ironically, photosystem II is the first of these systems to come into play. This system extracts oxygen molecules from water within the thylakoid membranes. Photosystem I has a slightly more niche role. Here, electrons are 'boosted' or 'excited' so NADP+ can reduce to NADPH. Below is a rather complicated diagram of these two systems at work. Try to understand their high-level differences.
 
 ![Photosystems I and II](/pictures/photosystems.png)
 
-The Calvin Cycle, the last stage of photosynthesis, occurs in the fluid surrounding the thylakoids (**stroma**). ATP and NADPH provide the energy necessary to convert CO2 from the air into glucose ($C_6H_{12}O_6$). The carbon in this glucose molecule is stolen directly from the CO2 in the air via **carbon fixation**. In total, 18 ATP and 12 NADPH molecules are required to create *just one* molecule of glucose!
+The Calvin Cycle, the last stage of photosynthesis, occurs in the fluid surrounding the thylakoids (**stroma**). ATP and NADPH provide the energy necessary to convert CO2 from the air into glucose ($C_6H_{12}O_6$). The carbon in this glucose molecule is stolen directly from the CO2 in the air via **carbon fixation**. In total, 18 ATP and 12 NADPH molecules create *just one* molecule of glucose!
 
 ## III. Sex
 
-So far, we've worked our way up the scales of life to the cellular level. We learned about the raw material making up cells and their chemical reactions, as well as a few fundamental cellular processes. But this is starting to get a bit drab. How can we make the leap from single cells to multi-cellular life?
+So far, we've worked our way up the scales of life to the cellular level. We learned about the raw material making up cells and their chemical reactions -- including a few fundamental cellular processes. But this is starting to get a bit drab. How can we make the leap from single cells to multi-cellular life?
 
-Our second section is a broad exploration of reproduction and inheritance in nature. The title "Sex" is therefore a bit of a misnomer. We will employ a strong anthropocentric bias in the topics that follow. That is, we will specifically explore the ways that *humans* reproduce and pass on genes from generation to generation. Thankfully, many concepts such as reproduction are universal. Living things, in fact, **must** reproduce to be considered living. Therefore, even as our conversations skew towards human beings, the general concepts we learn will apply to many other living things.
+Our second section is a broad exploration of reproduction and inheritance in nature. The title "Sex" is, therefore, a bit of a misnomer. We will employ an anthropocentric bias in the topics that follow. Specifically, we will explore how *humans* reproduce and pass on genes from generation to generation. Thankfully, many concepts like reproduction are universal. Living things, in fact, **must** reproduce to be considered living. Therefore, even as our conversations skew towards human beings, the general concepts we learn will apply to many other living things.
 
-There are two modes of reproduction. **Asexual reproduction** is the production of an exact genetic copy of an organism produced by a *single* living thing. This method is particularly popular among single-celled organisms. **Sexual reproduction**, by contrast, involves the production of new offspring by two organisms combining their unique genetic information. As human beings, we are primarily interested in the ladder method.
+There are two modes of reproduction. **Asexual reproduction** is the production of an exact genetic copy of an organism produced by a *single* living thing. This method is popular among single-celled creatures. **Sexual reproduction**, by contrast, involves the production of new offspring by two organisms combining their unique genetic information. As human beings, we are primarily interested in the ladder method.
 
 ### A. Mitosis
 
@@ -329,7 +333,7 @@ Adaptive immunity fights disease using via dual defense mechanism. This system e
 
 # V. Societies
 
-We now arrive at our last stop on this introductory tour of Biology. This section tackles the last rung on the scales of life. We'll consider **societies** to be groups of living things living together within the bounds of a closed system. This broad definition encompasses different **species** living together in communities, and the processes by which they adapt to their environments over time. 
+We now arrive at our last stop on this introductory tour of biology. This section tackles the last rung on the scales of life. We'll consider **societies** to be groups of living things living together within the bounds of a closed system. This broad definition encompasses different **species** living together in communities, and the processes by which they adapt to their environments over time. 
 
 ### A. Evolution of Populations
 
