@@ -7,17 +7,17 @@ subtitle: # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: # >
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
+  image_circular: false
+  more_info: >
+    <p>SN 278</p>
+    <p>232 S Columbia St</p>
+    <p>Chapel Hill, NC 27514</p>
 
-news: false  # includes a list of news items
-selected_papers: false  # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+news: true
+selected_papers: false
+social: true
 ---
 
-First-year master's student, researcher, and Teaching Assistant at UNC-Chapel Hill. Interested in applications of AI for video understanding – especially in sports domains. Hands-on experience as a full-stack developer for web and IOS applications. I'm also exploring novel applications of AI in finance. 
+I am a first-year master's student at the [University of North Carolina at Chapel Hill](https://cs.unc.edu/) working under the supervision of [Dr. Tianlong Chen](https://tianlong-chen.github.io/index.html#lab). I am broadly interested in applications of Computer Vision and Deep Learning – including diffusion models for material generation and post-deployment model optimization techniques.
 
-Please feel free to reach out to me with any questions. I always love to chat!
+During my undergrad at UNC, I worked with [Dr. Gedas Bertasius](https://www.gedasbertasius.com/) to build pipelines for structured video generation and human behavioral modeling. I also built massive, (i.e., 30TB+) densely annotated datasets to push models to their limits.
