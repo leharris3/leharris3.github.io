@@ -1,3 +1,12 @@
+---
+layout: post
+title: Sex & Cells
+date: 2024-04-29
+description: An Informal Introduction to Biology
+tags:
+categories:
+---
+
 # **Sex and Cells**
 ### *An Informal Introduction to Biology*
 

@@ -1,3 +1,12 @@
+---
+layout: post
+title: Building AI With Eyes
+date: 2024-03-18
+description:
+tags:
+categories:
+---
+
 On a long car ride home from Chapel Hill, I listened to a fantastic [interview](https://www.youtube.com/watch?v=5t1vTLU7s40&ab_channel=LexFridman) between Yan Lecunn and Lex Fridman. The two discussed, among many other things, the fundamental limitations of Large Language Models (LLMs). Yan mentioned that for a an entity to exhibit intelligence it must display at a minimum :
 
 1. Persistent memory.
