@@ -151,7 +151,7 @@ giscus:
   category: Comments 
   category_id: 
   mapping: title 
-  strict: 1 
+  strict: 1
   reactions_enabled: 1 
   input_position: bottom 
   theme: preferred_color_scheme 
