@@ -20,21 +20,23 @@ social: true
 
 Hello! My name is Levi, I am a second-year masters student studying computer science at the [University of North Carolina at Chapel Hill](https://cs.unc.edu/) supervised by Dr. Tianlong Chen at the [UNITES]((https://tianlong-chen.github.io/index.html#lab)) lab.
 
-Today, my work centers on **AI4Science**, the task of applying artificial intelligence to established scientific fields. Recent breakthroughs (e.g., LLMs, image/video generation models, etc) offer a plethora of ways to improve existing processes. Now, disciplines as diverse as cell microbiology, algebraic topology, and political science are integrating these AI-based techniques in unique ways to make life easier, and do previously impossible things. So, while it is clear that AI is a truly transformative technology, decades of cross-disciplinary work remains in front of us to build safe, trustworthy systems together.
+Today, my work centers on **AI4Science**, the task of applying artificial intelligence to established scientific fields. Recent breakthroughs (e.g., LLMs, image/video generation models, etc) offer a plethora of ways to improve a myriad of existing scientific processes. Now, disciplines as diverse as cell microbiology, algebraic topology, and political science are integrating AI-based techniques in unique ways to make life easier and do previously impossible things. And so, while AI is a remarkable, transformative technology, decades of cross-disciplinary work waits ahead of us to build effective, trustworthy systems together.
 
-My research has centered on two, high-impact fields thus far: *metrology* (the science of measurement) and *meterology* (the science of weather).
+My research has focused on two, high-impact fields so far: *metrology* (the science of measurement) and *meteorology* (the science of weather).
 
 ***AI4Metrology***
 
-- From late 2024 through spring 2025, researchers at ASU and I lead the development of novel, AI-based techniques for 2D material image-acquisition and analysis. In march of 2025, we published our results in SPIE as *SparseC-AFM: a deep learning method for fast and accurate characterization of MoS$_2$*. Heres, our key discovery is that image super-resolution models can be adapted to predict full-resolution conductive maps from sparse inputs. Using our proposed workflow, metrology researchers can collect and analize 2D material samples in a fraction of the time. 
+- From late 2024 through spring 2025, researchers at Arizona State and I lead the development of novel, AI-techniques for 2D material image-acquisition and analysis. In march of this year, we published our findings in SPIE as *SparseC-AFM: a deep learning method for fast and accurate characterization of MoS$_2$*. Our key discovery here is that image super-resolution models can be adapted to predict full-resolution conductive maps from sparse inputs. With our proposed workflow, metrology researchers can image and analize 2D material samples in a fraction of the time.
 
-***AI4Meterology***
+***AI4Meteorology***
 
-- Traditional Numerical Weather Prediction (NWP) techniques simulate the Earth's atmosphere according to physical laws. These models (e.g., ECMWF, GEFS) are powerful tools used by weather forecasters to anticipate future hazards, and issue timely warnings to the general public. New AI-WP models achieve the same goals by a very different mechanism. Using deep neural networks and supervised learning methods, early AI-based climate simulators are showing extrodinary promise for medium-range forecasting. Moreover, AI-WP approaches produce forecasts *orders of magnitude* faster than their NWP counterparts.
+- Numerical Weather Prediction (NWP) models simulate the Earth's atmosphere according to physical laws of nature. These prediction systems (e.g., ECMWF, GEFS) are the foundation of guidance for meteorologists, who use probabilistic data to generate discussions, forecast-products, and life-saving warnings for the general public. Predictably, NWP models are also some of the most *computationally intensive* applications ever devised by mankind. Each day, around the world, specially designed supercomputers crunch through the equations that predict future climate patterns. What if there was a way to shrink the compute required to simulate our Earth from the size of a warehouse down to your laptop? Moreover, what if this tiny climate-model actually *outperformed* the super-simulators that came before it? Today, AI is bringing this vision to reality.
 
-- My current research aims to develop skillful, AI-based techniques for nowcasting of high-impact weather events.
+- Researchers at the National Severe Storms Laboratory in Norman, Oklahoma recently began development of AI-WP models: the next frontier of weather prediction systems. Early results from NSSL's WoFSCast and GenCast experiments offer a clear picture of where we're heading – towards the development of **rapidly-updating**, **high-resolution** (i.e., <1km), CAMs with total coverage of the CONUS that are **trusted** and **interogated** by opperational meteorologists. In short, we imagine a world where weather modeling is no longer a bottleneck slowing the flow of life-saving weather forecasts to the public. 
 
-##### Bonus Info!
+- AI4Meteorology is my current research focus. Specifically, I seek to develop trustworthy, AI-based techniques to support nowcasting of short-term (i.e., 0-6H), high-impact weather events.
+
+##### Bonus!
 
 ***AI4Sports***
 
