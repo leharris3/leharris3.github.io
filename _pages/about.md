@@ -6,7 +6,7 @@ subtitle: # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: badwater-07-25.jpg
   image_circular: false
   more_info: >
     <p>SN 226</p>
