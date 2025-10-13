@@ -24,7 +24,7 @@ Today, my work centers on **AI4Science**, the task of applying artificial intell
 
 My research has focused on two, high-impact fields so far: *metrology* (the science of measurement) and *meteorology* (the science of weather). -->
 
-Hello! I am a second-year CS MS student at UNC Chapel Hill working with [Dr. Tianlong Chen]([UNITES]((https://tianlong-chen.github.io/index.html#lab)). During my undergrad at UNC, I also worked with [Dr. Gedas Bertasius](https://www.gedasbertasius.com/) to develop huge multimodal datasets for video understanding. Today my interests lie broadly in **AI4Science** problems, with a particular focus on applications for metrology and Earth science domains. These challenges create opportunities for high-impact, cross-disciplinary collaborations that I find deeply rewarding.
+👋 Hello! I am a second-year CS MS student at UNC Chapel Hill working with [Dr. Tianlong Chen](https://tianlong-chen.github.io/index.html#lab). During my undergrad at UNC, I also worked with [Dr. Gedas Bertasius](https://www.gedasbertasius.com/) to develop huge multimodal datasets for video understanding. Today my interests lie broadly in **AI4Science** problems, with a particular focus on applications for metrology and Earth science domains. These challenges create opportunities for high-impact, cross-disciplinary collaborations that I find deeply rewarding.
 
 Feel free to reach out (email is likely your best bet) with any questions about research or grad school!
 
