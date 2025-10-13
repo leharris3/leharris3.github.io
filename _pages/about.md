@@ -18,13 +18,17 @@ selected_papers: true
 social: true
 ---
 
-Hello! My name is Levi, I am a second-year masters student studying computer science at the [University of North Carolina at Chapel Hill](https://cs.unc.edu/) supervised by Dr. Tianlong Chen at the [UNITES]((https://tianlong-chen.github.io/index.html#lab)) lab.
+<!-- Hello! My name is Levi, I am a second-year masters student studying computer science at the [University of North Carolina at Chapel Hill](https://cs.unc.edu/) supervised by Dr. Tianlong Chen at the [UNITES]((https://tianlong-chen.github.io/index.html#lab)) lab.
 
 Today, my work centers on **AI4Science**, the task of applying artificial intelligence to established scientific fields. Recent breakthroughs (e.g., LLMs, image/video generation models, etc) offer a plethora of ways to improve a myriad of existing scientific processes. Now, disciplines as diverse as cell microbiology, algebraic topology, and political science are integrating AI-based techniques in unique ways to make life easier and do previously impossible things. And so, while AI is a remarkable, transformative technology, decades of cross-disciplinary work waits ahead of us to build effective, trustworthy systems together.
 
-My research has focused on two, high-impact fields so far: *metrology* (the science of measurement) and *meteorology* (the science of weather).
+My research has focused on two, high-impact fields so far: *metrology* (the science of measurement) and *meteorology* (the science of weather). -->
 
-***AI4Metrology***
+Hello! I am a second-year CS MS student at UNC Chapel Hill working with [Dr. Tianlong Chen]([UNITES]((https://tianlong-chen.github.io/index.html#lab)). During my undergrad at UNC, I also worked with [Dr. Gedas Bertasius](https://www.gedasbertasius.com/) to develop huge multimodal datasets for video understanding. Today my interests lie broadly in **AI4Science** problems, with a particular focus on applications for metrology and Earth science domains. These challenges create opportunities for high-impact, cross-disciplinary collaborations that I find deeply rewarding.
+
+Feel free to reach out (email is likely your best bet) with any questions about research or grad school!
+
+<!-- ***AI4Metrology***
 
 - From late 2024 through spring 2025, researchers at Arizona State and I lead the development of novel, AI-techniques for 2D material image-acquisition and analysis. In march of this year, we published our findings in SPIE as *SparseC-AFM: a deep learning method for fast and accurate characterization of MoS$_2$*. Our key discovery here is that image super-resolution models can be adapted to predict full-resolution conductive maps from sparse inputs. With our proposed workflow, metrology researchers can image and analize 2D material samples in a fraction of the time.
 
@@ -40,7 +44,7 @@ My research has focused on two, high-impact fields so far: *metrology* (the scie
 
 ***AI4Sports***
 
-During my undergrad at UNC, I also worked with [Dr. Gedas Bertasius](https://www.gedasbertasius.com/) to build densely annotated datasets for structured video generation and human behavioral modeling using basketball broadcast footage.
+During my undergrad at UNC, I also worked with [Dr. Gedas Bertasius](https://www.gedasbertasius.com/) to build densely annotated datasets for structured video generation and human behavioral modeling using basketball broadcast footage. -->
 
 <!--
 > "Modern AI is a horizontal enabling layer. It can be used to improve everything. It will be in everything. This is most like electricity."
