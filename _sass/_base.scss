@@ -4,19 +4,9 @@
 
 // Typography
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-em,
-div,
-li,
-span,
-strong {
+p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
   color: var(--global-text-color);
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 hr {
