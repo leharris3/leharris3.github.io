@@ -1,12 +1,12 @@
 ---
 layout: page
-title: projects
+title: week-in-review
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
+description:
+nav: false
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+display_categories:
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
