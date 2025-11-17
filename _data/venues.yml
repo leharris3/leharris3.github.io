@@ -7,3 +7,11 @@
 
 "Vision":
   color: "#009f36"
+
+"ArXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+"SPIE":
+  url: https://spie.org/
+  color: "#004a9c"
