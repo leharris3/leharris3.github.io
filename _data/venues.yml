@@ -14,4 +14,8 @@
 
 "SPIE":
   url: https://spie.org/
-  color: "#004a9c"
+  color: "#000000"
+
+"NeurIPS Competition":
+  url: https://neurips.cc/
+  color: "#674ea7"

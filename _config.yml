@@ -8,8 +8,7 @@ middle_name:
 last_name: Harris
 email: levlevi@cs.unc.edu
 description:  > 
-  
-footer_text: >
+footer_text:  >
 
 keywords:
 lang: en
@@ -24,6 +23,9 @@ back_to_top: true
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
+
+# highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
+# highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
@@ -111,7 +113,7 @@ youtube_id:
 zotero_username: 
 
 # TODO: add email in the usual, non-scrapable
-contact_note: # >
+contact_note: # on god himself i just get money its really all that i do
   # You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
@@ -194,7 +196,7 @@ collections:
     permalink: /:collection/:title/
 
 announcements:
-  enabled: false
+  enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -391,7 +393,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800

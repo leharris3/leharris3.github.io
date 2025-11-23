@@ -246,12 +246,9 @@
       https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
     
-      <source class="responsive-img-srcset" srcset="/assets/img/badwater-07-25-480.webp 480w,/assets/img/badwater-07-25-800.webp 800w,/assets/img/badwater-07-25-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px)
-      30vw, 95vw">
-    
     <img src="/assets/img/badwater-07-25.jpg?2a0d67d06181ca03262979845c2a626a" class="img-fluid z-depth-1
       rounded" width="100%" height="auto" alt="badwater-07-25.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </source></picture>
+  </picture>
 
   
 </figure>
@@ -312,6 +309,33 @@ This quote gets to the heart of *why* the field of AI has grown to enormous popu
 
     <!-- News -->
     
+      <h2>
+        <a href="/news/" style="color: inherit">news</a>
+      </h2>
+      <div class="news">
+  
+    
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        
+        
+        
+          <tr>
+            <th scope="row" style="width: 20%">Nov 16, 2025</th>
+            <td>
+              
+                Our paper won the NeurIPS 2025, Weather4Cast challenge <img class="emoji" title=":trophy:" alt=":trophy:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c6.png" height="20" width="20">.  See you in San Deigo!
+
+              
+            </td>
+          </tr>
+        
+      </table>
+    </div>
+  
+</div>
+
+    
 
     <!-- Latest posts -->
     
@@ -326,7 +350,7 @@ This quote gets to the heart of *why* the field of AI has grown to enormous popu
 <div class="row">
   
     <div class="col col-sm-2 abbr">
-          <abbr class="badge rounded w-100">SPIE</abbr>
+          <abbr class="badge rounded w-100">NeurIPS Comp’</abbr>
         
       
       
@@ -344,10 +368,8 @@ This quote gets to the heart of *why* the field of AI has grown to enormous popu
       https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
     
-      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/sparse-cafm-480.webp 480w,/assets/img/publication_preview/sparse-cafm-800.webp 800w,/assets/img/publication_preview/sparse-cafm-1400.webp 1400w," type="image/webp" sizes="200px">
-    
-    <img src="/assets/img/publication_preview/sparse-cafm.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="sparse-cafm.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </source></picture>
+    <img src="/assets/img/publication_preview/space-time-precip.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="space-time-precip.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
 
   
 </figure>
@@ -358,31 +380,17 @@ This quote gets to the heart of *why* the field of AI has grown to enormous popu
   
 
   <!-- Entry bib key -->
-  <div id="harris2025sparsecafmdeeplearningmethod" class="col-sm-8">
+  <div id="harris2025spacetimetransformerprecipitationforecasting" class="col-sm-8">
     <!-- Title -->
-    <div class="title">SparseC-AFM: a deep learning method for fast and accurate characterization of MoS_2 with C-AFM</div>
+    <div class="title">A Space-Time Transformer for Precipitation Forecasting</div>
     <!-- Author -->
     <div class="author">
       
 
       
       <em>Levi
-            Harris</em>, Md Jayed
-            Hossain, Mufan
-            Qiu, and
-        <span class="more-authors" title="click to view 6 more authors" onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '6 more authors' ? 'Ruichen Zhang, Pingchuan Ma, Tianlong Chen, Jiaqi Gu, Seth Ariel Tongay, Umberto Celano' : '6 more authors';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.html(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '10');
-          ">6 more authors</span>
-      
+            Harris</em>, and Tianlong
+            Chen
       
     </div>
 
@@ -407,15 +415,25 @@ This quote gets to the heart of *why* the field of AI has grown to enormous popu
     <!-- Links/Buttons -->
     <div class="links">
       
+        <a class="award btn btn-sm z-depth-0" role="button">Awarded</a>
       
       
       
       
       
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+        
+          <a href="https://arxiv.org/abs/2511.11090" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
       
       
       
       
+      
+        <a href="https://github.com/leharris3/satformer" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
       
       
       
@@ -437,9 +455,30 @@ This quote gets to the heart of *why* the field of AI has grown to enormous popu
     
 
     
+      <!-- Hidden Award block -->
+      <div class="award hidden d-print-inline">
+        <p></p>
+<p><strong>First Place</strong> 🏆 NeurIPS 2025 Weather4Cast Cumulative Precipitation Challenge</p>
+
+      </div>
+    
 
     
 
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@misc</span><span class="p">{</span><span class="nl">harris2025spacetimetransformerprecipitationforecasting</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A Space-Time Transformer for Precipitation Forecasting}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Harris, Levi and Chen, Tianlong}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{2511.11090}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">primaryclass</span> <span class="p">=</span> <span class="s">{cs.CV}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2511.11090}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
     
 
     
