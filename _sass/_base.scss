@@ -312,6 +312,18 @@ ul.task-list input[type="checkbox"] {
         }
       }
     }
+
+    .hf-icon {
+      height: 1em;
+      width: 1em;
+      vertical-align: -0.125em;
+      transition: all 0.2s ease-in-out;
+      filter: brightness(0.3);
+    }
+
+    a:hover .hf-icon {
+      filter: none;
+    }
   }
 }
 
@@ -347,7 +359,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .middle-bar {
-    opacity: 1;
+    filter: brightness(1);
   }
 
   .bottom-bar {
@@ -391,6 +403,18 @@ ul.task-list input[type="checkbox"] {
 
   .contact-note {
     font-size: 0.8rem;
+  }
+
+  .hf-icon {
+    height: 1em;
+    width: 1em;
+    vertical-align: -0.125em;
+    transition: all 0.2s ease-in-out;
+    filter: brightness(0.3);
+  }
+
+  a:hover .hf-icon {
+    filter: brightness(1);
   }
 }
 
@@ -959,7 +983,7 @@ progress::-moz-progress-bar {
   &:focus .copy,
   &:hover .copy {
     color: var(--global-hover-color);
-    opacity: 1;
+    filter: brightness(1);
   }
 }
 

@@ -91,6 +91,9 @@
 {% if site.kaggle_id %}
   <a href="https://www.kaggle.com/{{ site.kaggle_id }}" title="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
 {% endif %}
+{% if site.huggingface_username %}
+  <a href="https://huggingface.co/{{ site.huggingface_username }}" title="Hugging Face"><img class="hf-icon" alt="Hugging Face" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"></a>
+{% endif %}
 {% if site.lastfm_id %}
   <a href="https://www.last.fm/user/{{ site.lastfm_id }}" title="Last FM"><i class="fa-brands fa-lastfm"></i></a>
 {% endif %}

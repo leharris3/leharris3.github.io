@@ -5,61 +5,62 @@ permalink: /projects/
 description:
 nav: false
 nav_order: 3
-display_categories:
-horizontal: true
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+<style>
+.wir-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.wir-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.wir-item:last-child {
+  border-bottom: none;
+}
+.wir-date {
+  flex-shrink: 0;
+  width: 6rem;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  font-family: monospace;
+}
+.wir-content {
+  flex-grow: 1;
+}
+.wir-title {
+  font-weight: normal;
+}
+.wir-item.newest .wir-title {
+  font-weight: bold;
+}
+.wir-item.newest .wir-date::after {
+  content: " ●";
+  color: var(--global-theme-color);
+}
+.wir-description {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.25rem;
+}
+</style>
+
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
+
+<ul class="wir-list">
+  {% for project in sorted_projects %}
+  <li class="wir-item{% if forloop.first %} newest{% endif %}">
+    <span class="wir-date">{{ project.date | date: "%b %d, %Y" }}</span>
+    <div class="wir-content">
+      <a class="wir-title" href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      {% if project.description and project.description != "" %}
+      <p class="wir-description">{{ project.description }}</p>
+      {% endif %}
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
+  </li>
   {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+</ul>

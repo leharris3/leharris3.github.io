@@ -9,9 +9,7 @@ profile:
   image: badwater-07-25.jpg
   image_circular: false
   more_info: >
-    <p>SN 226</p>
-    <p>232 S Columbia St</p>
-    <p>Chapel Hill, NC 27514</p>
+    <code>SN 226, 232 S Columbia St<br>Chapel Hill, NC 27514</code>
 
 news: true
 selected_papers: true
