@@ -318,11 +318,11 @@ ul.task-list input[type="checkbox"] {
       width: 1em;
       vertical-align: -0.125em;
       transition: all 0.2s ease-in-out;
-      filter: brightness(0.3);
+      filter: brightness(0) saturate(100%) invert(15%) sepia(5%) saturate(500%) hue-rotate(295deg) brightness(95%);
     }
 
     a:hover .hf-icon {
-      filter: none;
+      filter: brightness(0) saturate(100%) invert(17%) sepia(95%) saturate(6000%) hue-rotate(298deg) brightness(88%) contrast(115%);
     }
   }
 }
@@ -410,11 +410,11 @@ ul.task-list input[type="checkbox"] {
     width: 1em;
     vertical-align: -0.125em;
     transition: all 0.2s ease-in-out;
-    filter: brightness(0.3);
+    filter: brightness(0) saturate(100%) invert(15%) sepia(5%) saturate(500%) hue-rotate(295deg) brightness(95%);
   }
 
   a:hover .hf-icon {
-    filter: brightness(1);
+    filter: brightness(0) saturate(100%) invert(17%) sepia(95%) saturate(6000%) hue-rotate(298deg) brightness(88%) contrast(115%);
   }
 }
 

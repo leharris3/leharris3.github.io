@@ -9,7 +9,7 @@ profile:
   image: badwater-07-25.jpg
   image_circular: false
   more_info: >
-    <code>SN 226, 232 S Columbia St<br>Chapel Hill, NC 27514</code>
+    <code>somewhere in Austin, TX...</code>
 
 news: true
 selected_papers: true
