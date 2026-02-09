@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-01T23:38:43+00:00</updated><id>http://0.0.0.0:8080/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry><title type="html">Sex &amp;amp; Cells</title><link href="http://0.0.0.0:8080/blog/2024/sex-and-cells/" rel="alternate" type="text/html" title="Sex &amp;amp; Cells" /><published>2024-04-29T00:00:00+00:00</published><updated>2024-04-29T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2024/sex-and-cells</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2024/sex-and-cells/"><![CDATA[<h1 id="sex-and-cells"><strong>Sex and Cells</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-09T23:01:40+00:00</updated><id>http://0.0.0.0:8080/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry><title type="html">(1/N) ML Concepts - The Perceptron</title><link href="http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons/" rel="alternate" type="text/html" title="(1/N) ML Concepts - The Perceptron" /><published>2026-02-08T00:00:00+00:00</published><updated>2026-02-08T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons/"><![CDATA[<p><em>This post borrows notation and structure from pages 18-57 of Anil Ananthaswamy’s fantastic book: “Why Machines Learn” (WML). Readers are expected to have some familiarity with concepts from Linear Algebra, including <strong>vectors</strong>, <strong>dot products</strong>, and related <strong>operations</strong> on vectors/matrices.</em></p>
+
+<h3 id="the-perceptron">The Perceptron</h3>
+<p>The perceptron is a simple, ubiquitous, and conceptually important machine learning model and associated optimization algorithm. Essentially, it is a binary classifier that assigns samples, represented as points \(\mathbf{x} \in \mathbb{R}^{1 \times d}\) to one of two categories \(y \in \{-1, +1 \}\), and is parameterized by a weight vector \(\mathbf{w} \in \mathbb{R}^{1 \times d}\) and a bias term \(b \in \mathbb{R}\). Following conventions used in WML, we will write samples as \(\mathbf{x} = [x_1, \dots, x_n]\) and weight matrices as \(\mathbf{w} = [w_1, \dots, w_n]\). The Perceptron is remarkably compact; it can be expressed as a simple piecewise function:</p>
+
+\[y = 
+  \begin{cases} 
+    +1 &amp; \sum_{i=1}^{n} w_i x_i + b \geq 0 \\ 
+    -1 &amp; \text{otherwise}
+  \end{cases} \text{.}\]
+
+<p>Or, using matrix multiplication instead of a weighted sum:</p>
+
+\[y = 
+  \begin{cases} 
+    +1 &amp; \mathbf{w}^{\top} \mathbf{x} + b \geq 0 \\ 
+    -1 &amp; \text{otherwise}
+  \end{cases} \text{.}\]
+
+<p>Readers might also be familiar with the following, biologically-inspired diagram.</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/pt_000.png" width="500" />
+</div>
+
+<p>Weight edges connecting \(x_i\) –&gt; \(w_i\) denote multiplication, edges from \(w_i\) –&gt; \(\sum\) summation, and from \(\sum\) –&gt; (activation fn) thresholding. This machinery constitutes a single “neuron” of a neural network consisting of (1) incoming weights, (2) a bias term, and (3) a non-linear activation function. We can think of the equation above as characterizing a hyperplane with dimensionality \(\mathbb{R}^{d - 1}\), capable of splitting any space in two. Points \(\mathbf{x}\) that lie in \(\mathbb{R}^{d}\) are classified as either \(-1\) or \(+1\) by our perceptron model. To make things more concrete, we’ll start off by showing the reader an example in \(\mathbb{R}^{2}\) for a weight vector \(\mathbf{w} = [1, 1]\) and bias term \(b=0\).</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/pt_001.png" width="400" />
+</div>
+
+<p>The weight vector \(\mathbf{w}\), starting at the origin and extending toward \([1,1]\), is orthogonal to a plane of separation that passes through the origin when \(b=0\). In this example, points that fall to the right of the black line are classified as \(+1\), and points to left as \(-1\). It may seem straightforward, but what happens visually when we set the bias term to a non-zero value, say \(b=-4\)?</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/pt_002.png" width="400" />
+</div>
+
+<p>Our separating plane shifts toward the left, away from the origin. You can imagine that our weight vector \(\mathbf{w}\) has been “translated” such that its magnitude remains the same, and its point of origin is \([-b, -b]\). This is just an intuition of course, and all vectors live at the origin. Now we can begin to turn our attention toward what the perceptron is actually good for: binary classification. Specifically, a perceptron can achieve perfect accuracy and generalization for any dataset whose points are linearly separable–that is, points belonging to different classes can be separated by a plane.</p>
+
+<p>Consider a dataset of basketball players \(\mathcal{D} = \{ (\mathbf{x}_i, y_i) \}_{i=1 \dots n}\), still in \(\mathbb{R}^2\), where \(\mathbf{x}_i = [\text{in. above avg. height}, \text{in. above avg. vertical leap}]\), and \(y_i = +1\) and \(y_i = -1\) indicate that player <strong>can</strong> or can <strong>not</strong> dunk, respectively. Reusing our perceptron model from earlier, our dataset might look like so:</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/pt_003.png" width="400" />
+</div>
+
+<p>Yikes, it looks like our model has misclassified some non-dunkers as dunkers! Now we have a dilemma: we know that our dataset is linearly separable, but we don’t know how to set the values of \(\mathbf{w}\) such that each feature is assigned to the correct class. This leads us to the <strong>Perceptron learning algorithm</strong>–a recursive procedure responsible for updating \(\mathbf{w}\) and \(b\) and which is guaranteed to succeed for any linearly separable dataset\(^*\). We’ll start off by grouping the bias term \(b\) into the weight matrix \(\mathbf{w}\) for notational convenience. We can rewrite \(\mathbf{x} = [x_0, x_1, \dots, x_n]\) and \(\mathbf{w} = [w_0, w_1, \dots, w_n]\), where \(x_0 = 1\) and \(w_0 = b\). Note that while, in the example above, \(\mathbf{x}\) and \(\mathbf{w}\) now technically exist in \(\mathbb{R}^3\), we can still visualize our perceptron in two-dimensions as before. Bias terms subsumed, our compacted model can be written as:</p>
+
+\[y = 
+  \begin{cases} 
+    +1 &amp; \mathbf{w}^{\top} \mathbf{x} \geq 0 \\ 
+    -1 &amp; \text{otherwise}
+  \end{cases} \text{.}\]
+
+<p>Now we’re ready to define our optimization algorithm.</p>
+
+<div style="background: white; border: 1px solid #ddd; border-radius: 6px; padding: 1.2em 1.5em; max-width: 540px; margin: 1em auto;">
+
+$$
+  \begin{aligned}
+  &amp;\textbf{Step 1: } \mathbf{w} \leftarrow \mathbf{0} \\
+  &amp;\textbf{Step 2: } \text{for } \mathbf{x}_i \in \mathcal{D}\text{:} \\
+  &amp;\quad \text{if } y_i \, \mathbf{w}^\top \mathbf{x}_i \leq 0\text{:} \\
+  &amp;\quad\quad \mathbf{w} \leftarrow \mathbf{w} + y_i \, \mathbf{x}_i \\
+  &amp;\textbf{Step 3: } \text{if no updates to } \mathbf{w} \text{ in Step 2: end} \\
+  &amp;\quad \text{else: go to Step 2}
+  \end{aligned}
+$$
+
+</div>
+
+<p>At a high level, this procedure iterates through each point in our dataset. When we encounter a point that is misclassified, the algorithm updates \(\mathbf{w}\) such that the plane of separation is “nudged” in the direction of the misclassified point. We repeat this process until every point is assigned to the correct label.</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/perceptron_learning.gif" width="500" />
+</div>
+
+<p>Miraculously, our work here is done! We have successfully defined and trained one of the essential models in modern AI with just a few concepts and lines of pseudo-code. While the Perceptron has some remarkable properties, namely a guarantee of convergence under the right conditions, a single neuron suffers some key limitations. <em>First and foremost, how do we model datasets that can <strong>not</strong> be separated by a single plane?</em> The answer is simple: we chain multiple neurons together into a “Multi-Layer Perceptron (MLP)”! But, these will have to wait until <em>next week’s</em> installment of ML Concepts.</p>
+
+<p>Thanks for reading!</p>
+
+<h3 id="footnotes">Footnotes</h3>
+
+<ul>
+  <li>*A formal proof of this property is not included in this post; the reader is highly encouraged to view Prof. Kilian Weinberger’s lecture referenced below for a thorough treatment of this topic [1].</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>[1] Weinberger, K. (2017). Lecture 6 “Perceptron convergence proof”—Cornell CS4780 SP17 [Video]. YouTube. https://www.youtube.com/watch?v=kObhWlqIeD8</li>
+  <li>[2] Ananthaswamy, A. (2024). Why machines learn: The elegant math behind modern AI. Dutton.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[A binary classifier with learnable parameters.]]></summary></entry><entry><title type="html">Sex &amp;amp; Cells</title><link href="http://0.0.0.0:8080/blog/2024/sex-and-cells/" rel="alternate" type="text/html" title="Sex &amp;amp; Cells" /><published>2024-04-29T00:00:00+00:00</published><updated>2024-04-29T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2024/sex-and-cells</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2024/sex-and-cells/"><![CDATA[<h1 id="sex-and-cells"><strong>Sex and Cells</strong></h1>
 <h3 id="an-informal-introduction-to-biology"><em>An Informal Introduction to Biology</em></h3>
 
 <hr />

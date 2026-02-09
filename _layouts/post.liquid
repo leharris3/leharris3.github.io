@@ -59,6 +59,9 @@ layout: default
         {% endfor %}
       {% endif %}
     </p>
+    {% if page.versions %}
+      {% include version_selector.liquid %}
+    {% endif %}
   </header>
 
   <article class="post-content">

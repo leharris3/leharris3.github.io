@@ -195,6 +195,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  versions:
+    output: true
+    permalink: /versions/:name/
 
 announcements:
   enabled: true

@@ -1,0 +1,14 @@
+{% if page.versions %}
+  <p class="post-meta" style="margin-top: 0.25rem;">
+    <i class="fa-solid fa-code-branch fa-sm"></i>
+    Versions:
+    {% for version in page.versions %}
+      {% if version.current %}
+        <strong>{{ version.label }}</strong>
+      {% else %}
+        <a href="{{ version.url | relative_url }}">{{ version.label }}</a>
+      {% endif %}
+      {% unless forloop.last %} · {% endunless %}
+    {% endfor %}
+  </p>
+{% endif %}
