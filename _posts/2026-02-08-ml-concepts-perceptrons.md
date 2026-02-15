@@ -9,7 +9,7 @@ categories:
 *This post borrows notation and structure from pages 18-57 of Anil Ananthaswamy's fantastic book: "Why Machines Learn" (WML). Readers are expected to have some familiarity with concepts from Linear Algebra, including **vectors**, **dot products**, and related **operations** on vectors/matrices.* 
 
 ### The Perceptron
-The perceptron is a simple, ubiquitous, and conceptually important machine learning model and associated optimization algorithm. Essentially, it is a binary classifier that assigns samples, represented as points $$\mathbf{x} \in \mathbb{R}^{1 \times d}$$ to one of two categories $$y \in \{-1, +1 \}$$, and is parameterized by a weight vector $$ \mathbf{w} \in \mathbb{R}^{1 \times d} $$ and a bias term $$b \in \mathbb{R}$$. Following conventions used in WML, we will write samples as $$\mathbf{x} = [x_1, \dots, x_n]$$ and weight matrices as $$\mathbf{w} = [w_1, \dots, w_n]$$. The Perceptron is remarkably compact; it can be expressed as a simple piecewise function:
+The perceptron is a simple, ubiquitous, and conceptually important machine learning model and associated optimization algorithm. Essentially, it is a binary classifier that assigns samples, represented as points $$\mathbf{x} \in \mathbb{R}^{1 \times d}$$ to one of two categories $$y \in \{-1, +1 \}$$, and is parameterized by a weight vector $$ \mathbf{w} \in \mathbb{R}^{1 \times d} $$ and a bias term $$b \in \mathbb{R}$$. Following conventions used in WML, we will write samples as $$\mathbf{x} = [x_1, \dots, x_n]$$ and weight vectors as $$\mathbf{w} = [w_1, \dots, w_n]$$. The Perceptron is remarkably compact; it can be expressed as a simple piecewise function:
 
 $$
   y = 
@@ -41,7 +41,7 @@ Weight edges connecting $$x_i$$ --> $$w_i$$ denote multiplication, edges from $$
   <img src="/assets/img/ml-concepts/pt_001.png" width="400"/>
 </div>
 
-The weight vector $$\mathbf{w}$$, starting at the origin and extending toward $$[1,1]$$, is orthogonal to a plane of separation that passes through the origin when $$b=0$$. In this example, points that fall to the right of the black line are classified as $$+1$$, and points to left as $$-1$$. It may seem straightforward, but what happens visually when we set the bias term to a non-zero value, say $$b=-4$$?
+The weight vector $$\mathbf{w}$$, starting at the origin and extending toward $$[1,1]$$, is orthogonal to a plane of separation that passes through the origin when $$b=0$$. In this example, points that fall to the right of the black line are classified as $$+1$$, and points to the left as $$-1$$. It may seem straightforward, but what happens visually when we set the bias term to a non-zero value, say $$b=-4$$?
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="/assets/img/ml-concepts/pt_002.png" width="400"/>
@@ -55,7 +55,7 @@ Consider a dataset of basketball players $$\mathcal{D} = \{ (\mathbf{x}_i, y_i) 
   <img src="/assets/img/ml-concepts/pt_003.png" width="400"/>
 </div>
 
-Yikes, it looks like our model has misclassified some non-dunkers as dunkers! Now we have a dilemma: we know that our dataset is linearly separable, but we don't know how to set the values of $$\mathbf{w}$$ such that each feature is assigned to the correct class. This leads us to the **Perceptron learning algorithm**–a recursive procedure responsible for updating $$\mathbf{w}$$ and $$b$$ and which is guaranteed to succeed for any linearly separable dataset$$^*$$. We'll start off by grouping the bias term $$b$$ into the weight matrix $$\mathbf{w}$$ for notational convenience. We can rewrite $$\mathbf{x} = [x_0, x_1, \dots, x_n]$$ and $$\mathbf{w} = [w_0, w_1, \dots, w_n]$$, where $$x_0 = 1$$ and $$w_0 = b$$. Note that while, in the example above, $$\mathbf{x}$$ and $$\mathbf{w}$$ now technically exist in $$\mathbb{R}^3$$, we can still visualize our perceptron in two-dimensions as before. Bias terms subsumed, our compacted model can be written as:
+Yikes, it looks like our model has misclassified some dunkers as non-dunkers! Now we have a dilemma: we know that our dataset is linearly separable, but we don't know how to set the values of $$\mathbf{w}$$ such that each sample is assigned to the correct class. This leads us to the **Perceptron learning algorithm**–a recursive procedure responsible for updating $$\mathbf{w}$$ and $$b$$ and which is guaranteed to succeed for any linearly separable dataset$$^*$$. We'll start off by grouping the bias term $$b$$ into the weight matrix $$\mathbf{w}$$ for notational convenience. We can rewrite $$\mathbf{x} = [x_0, x_1, \dots, x_n]$$ and $$\mathbf{w} = [w_0, w_1, \dots, w_n]$$, where $$x_0 = 1$$ and $$w_0 = b$$. Note that while, in the example above, $$\mathbf{x}$$ and $$\mathbf{w}$$ now technically exist in $$\mathbb{R}^3$$, we can still visualize our perceptron in two-dimensions as before. Bias terms subsumed, our compacted model can be written as:
 
 $$
   y = 
@@ -88,7 +88,7 @@ At a high level, this procedure iterates through each point in our dataset. When
   <img src="/assets/img/ml-concepts/perceptron_learning.gif" width="500"/>
 </div>
 
-Miraculously, our work here is done! We have successfully defined and trained one of the essential models in modern AI with just a few concepts and lines of pseudo-code. While the Perceptron has some remarkable properties, namely a guarantee of convergence under the right conditions, a single neuron suffers some key limitations. *First and foremost, how do we model datasets that can **not** be separated by a single plane?* The answer is simple: we chain multiple neurons together into a "Multi-Layer Perceptron (MLP)"! But, these will have to wait until *next week's* installment of ML Concepts.
+Miraculously, our work here is done! We have successfully defined and trained one of the essential models in modern AI with just a few concepts and lines of pseudo-code. While the Perceptron has some remarkable properties, namely a guarantee of convergence under the right conditions, a single neuron suffers some key limitations. *First and foremost, how do we model datasets that can **not** be separated by a single plane?* The answer is simple: we chain multiple neurons together into a "Multi-Layer Perceptron (MLP)!" But, these will have to wait until *next week's* installment of ML Concepts.
 
 Thanks for reading!
 

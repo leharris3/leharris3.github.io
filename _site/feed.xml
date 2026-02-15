@@ -1,7 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-09T23:07:42+00:00</updated><id>http://0.0.0.0:8080/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry><title type="html">(1/N) ML Concepts - The Perceptron</title><link href="http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons/" rel="alternate" type="text/html" title="(1/N) ML Concepts - The Perceptron" /><published>2026-02-08T00:00:00+00:00</published><updated>2026-02-08T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons/"><![CDATA[<p><em>This post borrows notation and structure from pages 18-57 of Anil Ananthaswamy’s fantastic book: “Why Machines Learn” (WML). Readers are expected to have some familiarity with concepts from Linear Algebra, including <strong>vectors</strong>, <strong>dot products</strong>, and related <strong>operations</strong> on vectors/matrices.</em></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-15T23:26:35+00:00</updated><id>http://0.0.0.0:8080/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry><title type="html">(2/N) ML Concepts - The Multi-Layer Perceptron</title><link href="http://0.0.0.0:8080/blog/2026/ml-concepts-mlps/" rel="alternate" type="text/html" title="(2/N) ML Concepts - The Multi-Layer Perceptron" /><published>2026-02-15T00:00:00+00:00</published><updated>2026-02-15T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2026/ml-concepts-mlps</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2026/ml-concepts-mlps/"><![CDATA[<p><em>This post makes use of notation and general concepts introduced in Chapter 4 of Christopher Bishop’s seminal textbook: “Neural Networks for Pattern Recognition.” Readers interested in building deeper intuition of the capabilities and limitations of neural networks–as well as the governing mathematics of machine learning–will benefit enormously from a review of this classic treatment.</em></p>
+
+<h3 id="the-multi-layer-perceptron">The Multi-Layer Perceptron</h3>
+
+<p>Last week, we provided a brief overview of one of the basic building blocks of machine learning: the <strong>Perceptron</strong>. Specifically, we focused on the implementation of a single-unit Perceptron trained with an adaptive weight-update algorithm. Recall that this simple model is capable of classifying any <strong>linearly separable</strong> dataset, and can be defined using the following equation:</p>
+
+\[y = 
+  \begin{cases} 
+    +1 &amp; \mathbf{w}^{\top} \mathbf{x} + b \geq 0 \\ 
+    -1 &amp; \text{otherwise}
+  \end{cases} \text{.}\]
+
+<p>But, what about the far more common, infinitely variable world of <strong>non-linearly separable</strong> datasets? What if, to accurately classify some dataset, we need to carve our input space into convex or even non-convex regions? To skillfully represent and extrapolate these data we will introduce a sequential function that (1) has learnable parameters that update based on observations, and (2) has some non-linearities baked in. To that end, today we are going to build a Multi-Layer Perceptron (MLP) bit by bit–slowly modifying our original Perceptron into a much more expressive model.</p>
+
+<p>Let’s remember that a single-unit Perceptron can be thought of as a machine that maps input vector data \(\mathbf{x} \in \mathbb{R}^d\) to one of two outputs \(y \in \{ -1, +1\}\) via a weight vector \(\mathbf{w} \in \mathbb{R}^d\) and a bias term \(b\). Taken from another point of view, these mathematical operations can be visualized as the activation pattern for a single <em>biological</em> (albeit an anatomically incorrect) neuron. (For sake of elegance, we subsume the bias term \(b\) in the weight vector using a trick outlined in our previous ML concepts blog.)</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/mlp/1_slp.png" width="500" />
+</div>
+
+<p><em>Here, edges connecting input values \(x_i\) to corresponding weights \(w_i\) represent multiplication.</em></p>
+
+<p>Imagine instead that we wanted to map an input vector \(\mathbf{x}^{( \ell)}\) belonging to a network layer \(\ell\) not to a single, scalar output, but to another vector, call it \(\mathbf{a}^{( \ell + 1)} \in \mathbb{R}^M\). We could achieve this quite simply by replacing \(\mathbf{w}\) in the equation for a Perceptron with a weight <strong>matrix</strong> \(A \in \mathbb{R}^{d \times M}\), and calculating \(\mathbf{a}^{( \ell + 1)} = A^{\top}_{(\ell + 1)} \mathbf{x}^{( \ell )} + b_{(\ell + 1)}\). This linear transformation forms part of a “layer” of a modern neural network, and can be thought of as the input signal to a grouping of artificial “neurons”.</p>
+
+<p>A non-linear activation function \(g(\cdot)\) is applied to obtain the final value of a hidden state vector \(\mathbf{z}^{(\ell + 1)} = g(\mathbf{a}^{( \ell + 1)})\). Once again, this added non-linearity is the secret sauce of deep learning; <strong>neural networks cannot learn non-linear mappings without non-linear activation functions</strong>, instead they degenerate into linear transforms that could be expressed as single-layer networks! Going back to the biological inspiration for MLPs, activation functions determine if, and how strongly, a particular neuron “fires”.</p>
+
+<p>In practice, \(g(\cdot)\) can be implemented many different ways, and indeed different activation functions are used at different points in a neural network. Our Perceptron model used a version of the “Heaviside” step function (a simple binary threshold). When calculating intermediate activations \(\mathbf{z}\), today we will use the tanh function \(g \equiv \text{tanh}(a) = \frac{e^{a} - e^{-a}}{e^{a} + e^{-a}}\). A diagram of a single neural network layer can now be drawn like so.</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/mlp/4_mlp_no_out.png" width="500" />
+</div>
+
+<p>The first and most obvious thing that stands out about this diagram is the density of the connections between the input vector and the hidden state. Just like in our Perceptron, unless they extend to a function, edges in this graph denote multiplication of an input value \(i\) by a weight \(j\): \(w^{( \ell + 1)}_{ji} x_i^{( \ell)}\). To extend this diagram and create an MLP, all we need to do is wire up the hidden state \(\mathbf{z}^{(\ell + 1)}\) to an output vector \(y \in \mathbb{R}^c\). In this second layer, we first calculate values \(\mathbf{a}^{( \ell + 2)} = A^{\top}_{(\ell + 2)} \mathbf{z}^{(\ell + 1)} + b_{(\ell + 2)}\). Finally, we apply a separate non-linear activation function \(\tilde{g}\) to obtain the network output \(y = \tilde{g}(\mathbf{a}^{( \ell + 2)})\). For many applications, such as multiway classification, the softmax function \(\text{softmax}(a_i) = \frac{e^{a_i}}{\sum_{j=1}^{c}e^{a_j}}\), makes a good choice for \(\tilde{g}\).</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/assets/img/ml-concepts/mlp/5_mlp_full.png" width="500" />
+</div>
+
+<p>And…we’re done! We’ve just built out our very own Multi-Layer Perceptron! Maybe you’re not excited yet, but you should be! A fully-connected, two-layer neural network like the one above has the power to transform vectors of arbitrary dimensionality to outputs of arbitrary dimensionality, to model simple non-linear functions like “XOR”, and is entirely differentiable–making it well-suited for adaptive learning algorithms like Gradient Descent (which we will be exploring…next week!) Appending just one more layer, that is, expanding our two-layer network into a three-layer network, allows us to learn non-convex (oddly shaped) partitions of any classification space. Consequently, an MLP can solve a much wider range of tasks than a single-unit Perceptron. The extraordinary learning capacities of multi-layered nets become more impressive when you consider that <strong><em>practically any form of data can be represented as a vector</em></strong>.</p>
+
+<p>So we know our model is expressive, but how on earth do you set its weights and thereby help it to reach its full potential? This will be the topic of next week’s ML-Concepts post, where we’re going to dive into Gradient Descent (maybe even SGD if the mood strikes). If you’ve made it this far (god bless you), thank you honestly! There are almost certainly mistakes abound in this post. When you find them, or if you just want to chat, feel free to send me an email.</p>
+
+<p>Thanks for reading!</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>[1] Bishop, C. M. (1995). The multi-layer perceptron. In <em>Neural networks for pattern recognition</em> (Chapter 4, pp. 116–163). Oxford University Press.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Remarkably simple; flexible, and fully-differentiable: MLPs feed-forward the soul.]]></summary></entry><entry><title type="html">(1/N) ML Concepts - The Perceptron</title><link href="http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons/" rel="alternate" type="text/html" title="(1/N) ML Concepts - The Perceptron" /><published>2026-02-08T00:00:00+00:00</published><updated>2026-02-08T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2026/ml-concepts-perceptrons/"><![CDATA[<p><em>This post borrows notation and structure from pages 18-57 of Anil Ananthaswamy’s fantastic book: “Why Machines Learn” (WML). Readers are expected to have some familiarity with concepts from Linear Algebra, including <strong>vectors</strong>, <strong>dot products</strong>, and related <strong>operations</strong> on vectors/matrices.</em></p>
 
 <h3 id="the-perceptron">The Perceptron</h3>
-<p>The perceptron is a simple, ubiquitous, and conceptually important machine learning model and associated optimization algorithm. Essentially, it is a binary classifier that assigns samples, represented as points \(\mathbf{x} \in \mathbb{R}^{1 \times d}\) to one of two categories \(y \in \{-1, +1 \}\), and is parameterized by a weight vector \(\mathbf{w} \in \mathbb{R}^{1 \times d}\) and a bias term \(b \in \mathbb{R}\). Following conventions used in WML, we will write samples as \(\mathbf{x} = [x_1, \dots, x_n]\) and weight matrices as \(\mathbf{w} = [w_1, \dots, w_n]\). The Perceptron is remarkably compact; it can be expressed as a simple piecewise function:</p>
+<p>The perceptron is a simple, ubiquitous, and conceptually important machine learning model and associated optimization algorithm. Essentially, it is a binary classifier that assigns samples, represented as points \(\mathbf{x} \in \mathbb{R}^{1 \times d}\) to one of two categories \(y \in \{-1, +1 \}\), and is parameterized by a weight vector \(\mathbf{w} \in \mathbb{R}^{1 \times d}\) and a bias term \(b \in \mathbb{R}\). Following conventions used in WML, we will write samples as \(\mathbf{x} = [x_1, \dots, x_n]\) and weight vectors as \(\mathbf{w} = [w_1, \dots, w_n]\). The Perceptron is remarkably compact; it can be expressed as a simple piecewise function:</p>
 
 \[y = 
   \begin{cases} 
@@ -29,7 +77,7 @@
   <img src="/assets/img/ml-concepts/pt_001.png" width="400" />
 </div>
 
-<p>The weight vector \(\mathbf{w}\), starting at the origin and extending toward \([1,1]\), is orthogonal to a plane of separation that passes through the origin when \(b=0\). In this example, points that fall to the right of the black line are classified as \(+1\), and points to left as \(-1\). It may seem straightforward, but what happens visually when we set the bias term to a non-zero value, say \(b=-4\)?</p>
+<p>The weight vector \(\mathbf{w}\), starting at the origin and extending toward \([1,1]\), is orthogonal to a plane of separation that passes through the origin when \(b=0\). In this example, points that fall to the right of the black line are classified as \(+1\), and points to the left as \(-1\). It may seem straightforward, but what happens visually when we set the bias term to a non-zero value, say \(b=-4\)?</p>
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="/assets/img/ml-concepts/pt_002.png" width="400" />
@@ -43,7 +91,7 @@
   <img src="/assets/img/ml-concepts/pt_003.png" width="400" />
 </div>
 
-<p>Yikes, it looks like our model has misclassified some non-dunkers as dunkers! Now we have a dilemma: we know that our dataset is linearly separable, but we don’t know how to set the values of \(\mathbf{w}\) such that each feature is assigned to the correct class. This leads us to the <strong>Perceptron learning algorithm</strong>–a recursive procedure responsible for updating \(\mathbf{w}\) and \(b\) and which is guaranteed to succeed for any linearly separable dataset\(^*\). We’ll start off by grouping the bias term \(b\) into the weight matrix \(\mathbf{w}\) for notational convenience. We can rewrite \(\mathbf{x} = [x_0, x_1, \dots, x_n]\) and \(\mathbf{w} = [w_0, w_1, \dots, w_n]\), where \(x_0 = 1\) and \(w_0 = b\). Note that while, in the example above, \(\mathbf{x}\) and \(\mathbf{w}\) now technically exist in \(\mathbb{R}^3\), we can still visualize our perceptron in two-dimensions as before. Bias terms subsumed, our compacted model can be written as:</p>
+<p>Yikes, it looks like our model has misclassified some dunkers as non-dunkers! Now we have a dilemma: we know that our dataset is linearly separable, but we don’t know how to set the values of \(\mathbf{w}\) such that each sample is assigned to the correct class. This leads us to the <strong>Perceptron learning algorithm</strong>–a recursive procedure responsible for updating \(\mathbf{w}\) and \(b\) and which is guaranteed to succeed for any linearly separable dataset\(^*\). We’ll start off by grouping the bias term \(b\) into the weight matrix \(\mathbf{w}\) for notational convenience. We can rewrite \(\mathbf{x} = [x_0, x_1, \dots, x_n]\) and \(\mathbf{w} = [w_0, w_1, \dots, w_n]\), where \(x_0 = 1\) and \(w_0 = b\). Note that while, in the example above, \(\mathbf{x}\) and \(\mathbf{w}\) now technically exist in \(\mathbb{R}^3\), we can still visualize our perceptron in two-dimensions as before. Bias terms subsumed, our compacted model can be written as:</p>
 
 \[y = 
   \begin{cases} 
@@ -74,7 +122,7 @@ $$
   <img src="/assets/img/ml-concepts/perceptron_learning.gif" width="500" />
 </div>
 
-<p>Miraculously, our work here is done! We have successfully defined and trained one of the essential models in modern AI with just a few concepts and lines of pseudo-code. While the Perceptron has some remarkable properties, namely a guarantee of convergence under the right conditions, a single neuron suffers some key limitations. <em>First and foremost, how do we model datasets that can <strong>not</strong> be separated by a single plane?</em> The answer is simple: we chain multiple neurons together into a “Multi-Layer Perceptron (MLP)”! But, these will have to wait until <em>next week’s</em> installment of ML Concepts.</p>
+<p>Miraculously, our work here is done! We have successfully defined and trained one of the essential models in modern AI with just a few concepts and lines of pseudo-code. While the Perceptron has some remarkable properties, namely a guarantee of convergence under the right conditions, a single neuron suffers some key limitations. <em>First and foremost, how do we model datasets that can <strong>not</strong> be separated by a single plane?</em> The answer is simple: we chain multiple neurons together into a “Multi-Layer Perceptron (MLP)!” But, these will have to wait until <em>next week’s</em> installment of ML Concepts.</p>
 
 <p>Thanks for reading!</p>
 
@@ -551,7 +599,7 @@ Human sex cells come in male (<strong>sperm</strong>) and female (<strong>egg</s
 
 <p>We consider five types of natural selection in the chart below.</p>
 
-<table>
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th>Variant</th>
@@ -583,9 +631,9 @@ Human sex cells come in male (<strong>sperm</strong>) and female (<strong>egg</s
 </table>
 
 <h2 id="vi-bibliography">VI. Bibliography</h2>
-<ol>
-  <li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10123176/.</li>
-</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[An Informal Introduction to Biology]]></summary></entry><entry><title type="html">Building AI With Eyes</title><link href="http://0.0.0.0:8080/blog/2024/building-ai-with-eyes/" rel="alternate" type="text/html" title="Building AI With Eyes" /><published>2024-03-18T00:00:00+00:00</published><updated>2024-03-18T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2024/building-ai-with-eyes</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2024/building-ai-with-eyes/"><![CDATA[<p>On a long car ride home from Chapel Hill, I listened to a fantastic <a href="https://www.youtube.com/watch?v=5t1vTLU7s40&amp;ab_channel=LexFridman">interview</a> between Yan Lecunn and Lex Fridman. The two discussed, among many other things, the fundamental limitations of Large Language Models (LLMs). Yan mentioned that for a an entity to exhibit intelligence it must display at a minimum :</p>
+<ul>
+  <li>[1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10123176/.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[An Informal Introduction to Biology]]></summary></entry><entry><title type="html">Building AI With Eyes</title><link href="http://0.0.0.0:8080/blog/2024/building-ai-with-eyes/" rel="alternate" type="text/html" title="Building AI With Eyes" /><published>2024-03-18T00:00:00+00:00</published><updated>2024-03-18T00:00:00+00:00</updated><id>http://0.0.0.0:8080/blog/2024/building-ai-with-eyes</id><content type="html" xml:base="http://0.0.0.0:8080/blog/2024/building-ai-with-eyes/"><![CDATA[<p>On a long car ride home from Chapel Hill, I listened to a fantastic <a href="https://www.youtube.com/watch?v=5t1vTLU7s40&amp;ab_channel=LexFridman">interview</a> between Yan Lecunn and Lex Fridman. The two discussed, among many other things, the fundamental limitations of Large Language Models (LLMs). Yan mentioned that for a an entity to exhibit intelligence it must display at a minimum :</p>
 
 <ol>
   <li>Persistent memory.</li>

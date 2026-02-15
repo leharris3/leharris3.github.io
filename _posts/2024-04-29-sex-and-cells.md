@@ -367,6 +367,7 @@ We consider five types of natural selection in the chart below.
 | Disruptive Selection | Favors individuals with phenotypes at *both extremes* of the population distribution. |
 | Sexual Selection | Selects for traits that improve the odds of *mating success*. |
 | Balancing Selection | Favors the *heterozygote* at a given locus. |
+{: .table .table-bordered .table-striped}
 
 ## VI. Bibliography
-1. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10123176/. 
+- [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10123176/. 
