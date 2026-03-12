@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(3/N) Basics of Backpropagation"
+title: "(3/N) ML Concepts - Basics of Back-Propagation"
 date: 2026-02-22
 description: "Credit attribution in neural networks via the chain rule."
 tags:
