@@ -24,9 +24,17 @@ My research has focused on two, high-impact fields so far: *metrology* (the scie
 
 <!-- 👋 Hello! I am a second-year CS MS student at UNC Chapel Hill working with [Dr. Tianlong Chen](https://tianlong-chen.github.io/index.html#lab). During my undergrad at UNC, I also worked with [Dr. Gedas Bertasius](https://www.gedasbertasius.com/) to develop multimodal datasets for video understanding and human skill estimation. Today my interests lie broadly in **AI4Science** problems, with a particular focus on applications for metrology and Earth science domains. These challenges create opportunities for high-impact, cross-disciplinary collaborations that I find deeply rewarding. -->
 
-👋 Hello! I am a second-year CS MS student at UNC Chapel Hill advised by [Prof. Tianlong Chen](https://tianlong-chen.github.io/index.html#lab). During my undergrad at UNC, I also worked with [Prof. Gedas Bertasius](https://www.gedasbertasius.com/) to develop multimodal datasets for video understanding and human skill estimation. Today, my interests lie at the intersection of computer vision and meteorology, with a particular focus on improving quantitative precipitation estimation (QPE) algorithms using data-driven approaches. These challenges are inherently cross-disciplinary and foster collaborations that I find deeply rewarding.
+<!-- 👋 Hello! I am a second-year CS MS student at UNC Chapel Hill advised by [Prof. Tianlong Chen](https://tianlong-chen.github.io/index.html#lab). During my undergrad at UNC, I also worked with [Prof. Gedas Bertasius](https://www.gedasbertasius.com/) to develop multimodal datasets for video understanding and human skill estimation. Today, my interests lie at the intersection of computer vision and meteorology, with a particular focus on improving quantitative precipitation estimation (QPE) algorithms using data-driven approaches. These challenges are inherently cross-disciplinary and foster collaborations that I find deeply rewarding.
 
-Feel free to reach out (email is likely your best bet) with any questions about research or grad school!
+Feel free to reach out (email is likely your best bet) with any questions about research or grad school! -->
+
+👋 Hello! I am an incoming Ph.D. candidate in Interdisciplinary Engineering (CEE & ECE) at Northeastern University, advised by [Auroop Ganguly](https://sdslab.io/), with co-advising from [Edward Beighley](https://coe.northeastern.edu/people/beighley-edward/) and [Jennifer Dy](https://coe.northeastern.edu/people/dy-jennifer/). Today, my research concerns precipitation—developing techniques to predict rainfall now (estimation) and in the very near future (nowcasting). Unfortunately, time devoted to these problems tends to create more questions than it answers, namely:
+
+1. When and why do meteorological datasets diverge from the physical truth?
+2. Can machine learning techniques provide operational utility under uncertainty or at extremes?
+3. Do imperfect and incomplete weather observations create or hide risk?
+
+The ultimate goal of my work is to reduce [impacts](https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf) by generating useful tools and text for the [real experts](https://www.weather.gov/). If you have any questions or other inquiries, please send me an email, and I’ll respond as soon as practical!
 
 <!-- ***AI4Metrology***
 
