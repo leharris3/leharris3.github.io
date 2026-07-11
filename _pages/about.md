@@ -9,12 +9,32 @@ profile:
   image: badwater-07-25.jpg
   image_circular: false
   more_info: >
-    <code>somewhere in Austin, TX...</code>
+    Badwater, CA. It is not raining.
 
 news: true
 selected_papers: true
 social: true
 ---
+
+👋 Hello! I am an incoming Ph.D. candidate in the Department of Civil and Environmental Engineering at Northeastern University, advised by [Auroop Ganguly](https://sdslab.io/), with co-advising from [Edward Beighley](https://coe.northeastern.edu/people/beighley-edward/), where I'm fortunate to be supported by an Alsaif fellowship. Currently my work concerns precipitation measurements–their flaws and their applications. My research questions are fairly simple:
+
+1. Is it raining?
+2. Did it rain?
+3. What are the consequences?
+
+I am also interested in exploring deep learning techniques to address these topics. Feel free to send me an email using the mail icon below!
+
+<!-- # <code>somewhere in Austin, TX...</code> -->
+
+<!-- The ultimate goal of my work is to reduce [impacts](https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf) by generating useful tools and text for the [real experts](https://www.weather.gov/). If you have any questions or other inquiries, please send me an email, and I’ll respond as soon as practical! -->
+
+<!-- 👋 Hello! I am an incoming Ph.D. candidate in Interdisciplinary Engineering (CEE & ECE) at Northeastern University, advised by [Auroop Ganguly](https://sdslab.io/), with co-advising from [Edward Beighley](https://coe.northeastern.edu/people/beighley-edward/) and [Jennifer Dy](https://coe.northeastern.edu/people/dy-jennifer/). Today, my research concerns precipitation—developing techniques to predict rainfall now (estimation) and in the very near future (nowcasting). Unfortunately, time devoted to these problems tends to create more questions than it answers, namely:
+
+1. When and why do meteorological datasets diverge from the physical truth?
+2. Can machine learning techniques provide operational utility under uncertainty or at extremes?
+3. Do imperfect and incomplete weather observations create or hide risk?
+
+The ultimate goal of my work is to reduce [impacts](https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf) by generating useful tools and text for the [real experts](https://www.weather.gov/). If you have any questions or other inquiries, please send me an email, and I’ll respond as soon as practical! -->
 
 <!-- Hello! My name is Levi, I am a second-year masters student studying computer science at the [University of North Carolina at Chapel Hill](https://cs.unc.edu/) supervised by Dr. Tianlong Chen at the [UNITES]((https://tianlong-chen.github.io/index.html#lab)) lab.
 
@@ -28,23 +48,15 @@ My research has focused on two, high-impact fields so far: *metrology* (the scie
 
 Feel free to reach out (email is likely your best bet) with any questions about research or grad school! -->
 
-👋 Hello! I am an incoming Ph.D. candidate in Interdisciplinary Engineering (CEE & ECE) at Northeastern University, advised by [Auroop Ganguly](https://sdslab.io/), with co-advising from [Edward Beighley](https://coe.northeastern.edu/people/beighley-edward/) and [Jennifer Dy](https://coe.northeastern.edu/people/dy-jennifer/). Today, my research concerns precipitation—developing techniques to predict rainfall now (estimation) and in the very near future (nowcasting). Unfortunately, time devoted to these problems tends to create more questions than it answers, namely:
-
-1. When and why do meteorological datasets diverge from the physical truth?
-2. Can machine learning techniques provide operational utility under uncertainty or at extremes?
-3. Do imperfect and incomplete weather observations create or hide risk?
-
-The ultimate goal of my work is to reduce [impacts](https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf) by generating useful tools and text for the [real experts](https://www.weather.gov/). If you have any questions or other inquiries, please send me an email, and I’ll respond as soon as practical!
-
 <!-- ***AI4Metrology***
 
-- From late 2024 through spring 2025, researchers at Arizona State and I lead the development of novel, AI-techniques for 2D material image-acquisition and analysis. In march of this year, we published our findings in SPIE as *SparseC-AFM: a deep learning method for fast and accurate characterization of MoS$_2$*. Our key discovery here is that image super-resolution models can be adapted to predict full-resolution conductive maps from sparse inputs. With our proposed workflow, metrology researchers can image and analize 2D material samples in a fraction of the time.
+- From late 2024 through spring 2025, researchers at Arizona State and I led the development of novel, AI-techniques for 2D material image-acquisition and analysis. In March of this year, we published our findings in SPIE as *SparseC-AFM: a deep learning method for fast and accurate characterization of MoS$_2$*. Our key discovery here is that image super-resolution models can be adapted to predict full-resolution conductive maps from sparse inputs. With our proposed workflow, metrology researchers can image and analyze 2D material samples in a fraction of the time.
 
 ***AI4Meteorology***
 
 - Numerical Weather Prediction (NWP) models simulate the Earth's atmosphere according to physical laws of nature. These prediction systems (e.g., ECMWF, GEFS) are the foundation of guidance for meteorologists, who use probabilistic data to generate discussions, forecast-products, and life-saving warnings for the general public. Predictably, NWP models are also some of the most *computationally intensive* applications ever devised by mankind. Each day, around the world, specially designed supercomputers crunch through the equations that predict future climate patterns. What if there was a way to shrink the compute required to simulate our Earth from the size of a warehouse down to your laptop? Moreover, what if this tiny climate-model actually *outperformed* the super-simulators that came before it? Today, AI is bringing this vision to reality.
 
-- Researchers at the National Severe Storms Laboratory in Norman, Oklahoma recently began development of AI-WP models: the next frontier of weather prediction systems. Early results from NSSL's WoFSCast and GenCast experiments offer a clear picture of where we're heading – towards the development of **rapidly-updating**, **high-resolution** (i.e., <1km), CAMs with total coverage of the CONUS that are **trusted** and **interogated** by opperational meteorologists. In short, we imagine a world where weather modeling is no longer a bottleneck slowing the flow of life-saving weather forecasts to the public. 
+- Researchers at the National Severe Storms Laboratory in Norman, Oklahoma recently began development of AI-WP models: the next frontier of weather prediction systems. Early results from NSSL's WoFSCast and GenCast experiments offer a clear picture of where we're heading – towards the development of **rapidly-updating**, **high-resolution** (i.e., <1km), CAMs with total coverage of the CONUS that are **trusted** and **interrogated** by operational meteorologists. In short, we imagine a world where weather modeling is no longer a bottleneck slowing the flow of life-saving weather forecasts to the public. 
 
 - AI4Meteorology is my current research focus. Specifically, I seek to develop trustworthy, AI-based techniques to support nowcasting of short-term (i.e., 0-6H), high-impact weather events.
 

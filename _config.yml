@@ -193,7 +193,7 @@ collections:
     output: false
     permalink: /:collection/:title/
   projects:
-    output: true
+    output: false # set back to true to un-hide week-in-review pages
     permalink: /:collection/:title/
   versions:
     output: true

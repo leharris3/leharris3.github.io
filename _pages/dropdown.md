@@ -8,7 +8,7 @@ children:
   - title: divider
   - title: blog
     permalink: /blog/
-  - title: divider
-  - title: week-in-review
-    permalink: /projects/
+  # - title: divider
+  # - title: week-in-review
+  #   permalink: /projects/
 ---

@@ -5,6 +5,7 @@ permalink: /projects/
 description:
 nav: false
 nav_order: 3
+published: false # remove this line to un-hide the week-in-review listing
 ---
 
 <style>
