@@ -318,15 +318,19 @@ ul.task-list input[type="checkbox"] {
     }
 
     .hf-icon {
+      display: inline-block;
       height: 1em;
       width: 1em;
       vertical-align: -0.125em;
       transition: all 0.2s ease-in-out;
-      filter: brightness(0) saturate(100%) invert(15%) sepia(5%) saturate(500%) hue-rotate(295deg) brightness(95%);
+      // painted through a mask so the logo follows the light/dark theme
+      background-color: var(--global-text-color);
+      -webkit-mask: url("../img/hf-black-logo.png") no-repeat center / contain;
+      mask: url("../img/hf-black-logo.png") no-repeat center / contain;
     }
 
     a:hover .hf-icon {
-      filter: brightness(0) saturate(100%) invert(17%) sepia(95%) saturate(6000%) hue-rotate(298deg) brightness(88%) contrast(115%);
+      background-color: var(--global-theme-color);
     }
   }
 }
@@ -410,15 +414,19 @@ ul.task-list input[type="checkbox"] {
   }
 
   .hf-icon {
+    display: inline-block;
     height: 1em;
     width: 1em;
     vertical-align: -0.125em;
     transition: all 0.2s ease-in-out;
-    filter: brightness(0) saturate(100%) invert(15%) sepia(5%) saturate(500%) hue-rotate(295deg) brightness(95%);
+    // painted through a mask so the logo follows the light/dark theme
+    background-color: var(--global-text-color);
+    -webkit-mask: url("../img/hf-black-logo.png") no-repeat center / contain;
+    mask: url("../img/hf-black-logo.png") no-repeat center / contain;
   }
 
   a:hover .hf-icon {
-    filter: brightness(0) saturate(100%) invert(17%) sepia(95%) saturate(6000%) hue-rotate(298deg) brightness(88%) contrast(115%);
+    background-color: var(--global-theme-color);
   }
 }
 

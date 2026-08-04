@@ -18,9 +18,10 @@ social: true
 
 👋 Hello! I am an incoming Ph.D. candidate in the Department of Civil and Environmental Engineering at Northeastern University, advised by [Auroop Ganguly](https://sdslab.io/), with co-advising from [Edward Beighley](https://coe.northeastern.edu/people/beighley-edward/), where I'm fortunate to be supported by an Alsaif fellowship. Currently my work concerns precipitation measurements–their flaws and their applications. My research questions are fairly simple:
 
-1. Is it raining?
-2. Did it rain?
-3. What are the consequences?
+1. Did it rain?
+  * Uncertainty quantification; error attribution for remote (particularly radar) estimates of liquid precipitation.
+2. What are the consequences?
+  * ...tbd!
 
 I am also interested in exploring deep learning techniques to address these topics. Feel free to send me an email using the mail icon below!
 
