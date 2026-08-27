@@ -23,3 +23,37 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/*******************************************************************************
+ * Custom cursor: raindrop.
+ * The plain url() declaration comes first as a fallback; browsers that
+ * understand image-set() use the later declaration for a crisp 2x cursor.
+ ******************************************************************************/
+
+$cursor-drop-1x: "{{ site.baseurl }}/assets/img/cursor-drop.png";
+$cursor-drop-2x: "{{ site.baseurl }}/assets/img/cursor-drop@2x.png";
+
+@mixin cursor-drop($fallback) {
+  cursor: url("#{$cursor-drop-1x}") 16 3, $fallback;
+  cursor: -webkit-image-set(url("#{$cursor-drop-1x}") 1x, url("#{$cursor-drop-2x}") 2x) 16 3, $fallback;
+  cursor: image-set(url("#{$cursor-drop-1x}") 1x, url("#{$cursor-drop-2x}") 2x) 16 3, $fallback;
+}
+
+html,
+body {
+  @include cursor-drop(auto);
+}
+
+a,
+button,
+summary,
+label,
+select,
+.btn,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"] {
+  @include cursor-drop(pointer);
+}
