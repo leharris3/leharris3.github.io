@@ -1,14 +1,53 @@
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.username }}">
-    <img
-      class="repo-img-light w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&show_icons=true"
-    >
-    <img
-      class="repo-img-dark w-100"
-      alt="{{ include.username }}"
-      src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&show_icons=true"
-    >
+{% comment %}
+  Renders a user card from data fetched at build time by
+  _plugins/github-repo-data.rb. Variables are prefixed to avoid colliding with
+  the caller's `user` loop variable, which would shadow them.
+{% endcomment %}
+{% assign gh_key = include.username %}
+{% assign gh_user = site.data.github.users[gh_key] %}
+
+{% if gh_user.url %}
+  {% assign gh_url = gh_user.url %}
+{% else %}
+  {% assign gh_url = include.username | prepend: 'https://github.com/' %}
+{% endif %}
+
+<div class="repo repo-user p-2">
+  <a class="repo-card repo-user-card" href="{{ gh_url }}">
+    {% if gh_user.avatar %}
+      <img
+        class="repo-user-avatar"
+        src="{{ gh_user.avatar }}&s=160"
+        alt="{{ include.username }}"
+        width="80"
+        height="80"
+        loading="lazy"
+      >
+    {% endif %}
+    <div class="repo-user-body">
+      <div class="repo-card-title">
+        <span>{{ gh_user.name | default: include.username }}</span>
+        {% if gh_user.name %}
+          <span class="repo-user-login">@{{ gh_user.login | default: include.username }}</span>
+        {% endif %}
+      </div>
+      {% if gh_user.bio %}
+        <p class="repo-card-description">{{ gh_user.bio }}</p>
+      {% endif %}
+      <div class="repo-card-meta">
+        {% if gh_user.repos -%}
+          <span><i class="fa-solid fa-book"></i> {{ gh_user.repos }} repositories</span>
+        {%- endif %}
+        {% if gh_user.stars and gh_user.stars > 0 %}
+          <span><i class="fa-regular fa-star"></i> {{ gh_user.stars }} stars</span>
+        {% endif %}
+        {% if gh_user.followers -%}
+          <span><i class="fa-solid fa-user-group"></i> {{ gh_user.followers }} followers</span>
+        {%- endif %}
+        {% if gh_user.location -%}
+          <span><i class="fa-solid fa-location-dot"></i> {{ gh_user.location }}</span>
+        {%- endif %}
+      </div>
+    </div>
   </a>
 </div>

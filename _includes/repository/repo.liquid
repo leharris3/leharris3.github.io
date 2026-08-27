@@ -1,5 +1,19 @@
-{% assign repo_url = include.repository | split: '/' %}
-{% if site.data.repositories.github_users contains repo_url.first %}
+{% comment %}
+  Renders a repository card from data fetched at build time by
+  _plugins/github-repo-data.rb. Variables are prefixed to avoid colliding with
+  the caller's `repo` loop variable, which would shadow them.
+{% endcomment %}
+{% assign gh_key = include.repository %}
+{% assign gh_repo = site.data.github.repos[gh_key] %}
+{% assign gh_path = include.repository | split: '/' %}
+
+{% if gh_repo.url %}
+  {% assign gh_url = gh_repo.url %}
+{% else %}
+  {% assign gh_url = include.repository | prepend: 'https://github.com/' %}
+{% endif %}
+
+{% if site.data.repositories.github_users contains gh_path.first %}
   {% assign show_owner = false %}
 {% else %}
   {% assign show_owner = true %}
@@ -11,17 +25,34 @@
   {% assign max_lines = 2 %}
 {% endif %}
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img
-      class="repo-img-light w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
-    <img
-      class="repo-img-dark w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
+<div class="repo p-2">
+  <a class="repo-card" href="{{ gh_url }}">
+    <div class="repo-card-title">
+      <i class="fa-regular fa-bookmark"></i>
+      <span>
+        {%- if show_owner %}{{ gh_path[0] }}/{% endif -%}
+        {{- gh_repo.name | default: gh_path[1] -}}
+      </span>
+      {% if gh_repo.archived -%}
+        <span class="repo-card-badge">Archived</span>
+      {%- endif %}
+    </div>
+    {% if gh_repo.description %}
+      <p class="repo-card-description" style="-webkit-line-clamp: {{ max_lines }};">{{ gh_repo.description }}</p>
+    {% endif %}
+    <div class="repo-card-meta">
+      {% if gh_repo.language %}
+        <span>
+          <span class="repo-card-lang-dot" style="background-color: {{ gh_repo.language_color }};"></span>
+          {{ gh_repo.language }}
+        </span>
+      {% endif %}
+      {% if gh_repo.stars and gh_repo.stars > 0 %}
+        <span><i class="fa-regular fa-star"></i> {{ gh_repo.stars }}</span>
+      {% endif %}
+      {% if gh_repo.forks and gh_repo.forks > 0 %}
+        <span><i class="fa-solid fa-code-fork"></i> {{ gh_repo.forks }}</span>
+      {% endif %}
+    </div>
   </a>
 </div>

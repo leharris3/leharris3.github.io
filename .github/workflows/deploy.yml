@@ -85,6 +85,10 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
       - name: Install and Build 🔧
+        env:
+          # Lets _plugins/github-repo-data.rb use the authenticated API rate
+          # limit when fetching the cards for /repositories/.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production

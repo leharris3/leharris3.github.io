@@ -601,6 +601,110 @@ footer.sticky-bottom {
   }
 }
 
+.repo.repo-user {
+  max-width: 100%;
+  width: 100%;
+}
+
+.repo-card {
+  display: block;
+  height: 100%;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// The theme sets a color on bare `span`/`div`/`p`, which outranks inheritance
+// from the card, so each piece of card text names its own color.
+.repo-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  span {
+    color: var(--global-theme-color);
+  }
+
+  i {
+    color: var(--global-text-color-light);
+    font-weight: 400;
+  }
+}
+
+.repo-card-title .repo-card-badge {
+  padding: 0 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+.repo-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+
+.repo-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+
+  span,
+  i {
+    color: var(--global-text-color-light);
+  }
+}
+
+.repo-card-lang-dot {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  vertical-align: -1px;
+}
+
+.repo-user-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.repo-user-avatar {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--global-divider-color);
+}
+
+.repo-user-body {
+  min-width: 0;
+}
+
+.repo-card-title .repo-user-login {
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
 // Blog
 
 .header-bar {
