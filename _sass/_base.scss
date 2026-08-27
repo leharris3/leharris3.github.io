@@ -4,7 +4,17 @@
 
 // Typography
 
-p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+div,
+span,
+strong {
   color: var(--global-text-color);
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -376,7 +386,8 @@ ul.task-list input[type="checkbox"] {
 }
 
 #light-toggle,
-#search-toggle {
+#search-toggle,
+#rain-toggle {
   padding: 0;
   border: 0;
   background-color: inherit;
@@ -384,6 +395,63 @@ ul.task-list input[type="checkbox"] {
 
   &:hover {
     color: var(--global-hover-color);
+  }
+}
+
+#rain-toggle-icon {
+  padding-left: 10px;
+  padding-top: 12px;
+  display: block;
+}
+
+#rain-toggle[aria-pressed="true"] {
+  color: var(--global-theme-color);
+}
+
+/* Rain cursor: a raining cloud emoji that stands in for the pointer. */
+
+html.rain-cursor-active,
+html.rain-cursor-active * {
+  cursor: none !important;
+}
+
+#rain-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#rain-cursor .rain-cursor-cloud,
+#rain-cursor .rain-cursor-drop {
+  position: fixed;
+  user-select: none;
+  line-height: 1;
+  will-change: transform, opacity;
+}
+
+#rain-cursor .rain-cursor-cloud {
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+#rain-cursor .rain-cursor-drop {
+  font-size: 0.65rem;
+  animation: rain-cursor-fall 1.1s linear forwards;
+}
+
+@keyframes rain-cursor-fall {
+  from {
+    opacity: 0.9;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(var(--rain-drift, 0px), 90px);
   }
 }
 
