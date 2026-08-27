@@ -16,14 +16,15 @@ selected_papers: true
 social: true
 ---
 
-👋 Hello! I am an incoming Ph.D. candidate in the Department of Civil and Environmental Engineering at Northeastern University, advised by [Auroop Ganguly](https://sdslab.io/), with co-advising from [Edward Beighley](https://coe.northeastern.edu/people/beighley-edward/), where I'm fortunate to be supported by an Alsaif fellowship. Currently my work concerns precipitation measurements–their flaws and their applications. My research questions are fairly simple:
+👋 Hello! I am an incoming Ph.D. candidate in the Department of Civil and Environmental Engineering at Northeastern University, advised by [Auroop Ganguly](https://sdslab.io/), and I am fortunate to be supported by an Alsaif Fellowship. Currently my work concerns remote observations of precipitation—their flaws and their applications. My research questions are fairly simple:
 
 1. Did it rain?
-  * Uncertainty quantification; error attribution for remote (particularly radar) estimates of liquid precipitation.
-2. What are the consequences?
-  * ...tbd!
+  * Identifying and quantifying sources of uncertainty in rainfall retrievals, particularly those developed for [ground radar networks](https://mrms.nssl.noaa.gov/).
+2. Will it rain (soon)?
+  * Nowcasting precipitation with machine learning in physically challenging settings (e.g., extremes).
 
-I am also interested in exploring deep learning techniques to address these topics. Feel free to send me an email using the mail icon below!
+An overarching interest of mine is the question of *if*, and if so, *how*, machine learning techniques can help create new knowledge of the Earth system. If you have any answers (or if you just want to chat (:) send me an email using the mail icon below!
+
 
 <!-- # <code>somewhere in Austin, TX...</code> -->
 
