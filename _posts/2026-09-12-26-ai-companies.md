@@ -5,6 +5,7 @@ date: 2026-09-12
 description: ""
 tags:
 categories:
+published: false
 ---
 
 During the preceding weeks I have followed a string of AI-driven "breakthroughs" in pure mathematics with initial excitement, growing discomfort, and now with a mix of fear, anger, and deep sadness. Recently, American AI companies, namely OpenAI and Anthropic, have achieved major milestones in the intertwined histories of math and computer science by offering up solutions to the *Unit Distance Conjecture* and a blowup for the *Navier-Stokes*—with more major results rumored to be announced pending the development of press materials. These results were pursued with total indifference towards the feelings and livelihoods of the mathematical community; these results were pursued without curiosity or with any interest in their scientific consequences. Instead, open problems that were intended to serve as rallying points for the creation of new human knowledge have become, have been very intentionally transformed into, more sterile benchmarks used to promote upcoming model capabilities. Below, I will briefly summarize my thoughts on these matters as a non-mathematician.
